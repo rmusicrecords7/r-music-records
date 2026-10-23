@@ -140,6 +140,31 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="note" data-t="sNote">Ціни зі словом «від» залежать від складності. Остаточну вартість я називаю після оцінки вашого матеріалу.</p>
 </div></section>
 
+<section id="service-pages">
+  <div class="wrap">
+    <h2 data-t="spH">Послуги окремо</h2>
+    <p class="sub" data-t="spSub">Детальніше про кожну послугу та її вартість.</p>
+    <div class="links">
+      <a href="/mixing-ua.html" data-page="mixing">
+        <span data-t="spMix">Зведення музики</span>
+        <small data-t="spMixD">Mixing</small>
+      </a>
+      <a href="/mastering-ua.html" data-page="mastering">
+        <span data-t="spMaster">Мастеринг</span>
+        <small data-t="spMasterD">Mastering</small>
+      </a>
+      <a href="/arrangement-ua.html" data-page="arrangement">
+        <span data-t="spArr">Аранжування</span>
+        <small data-t="spArrD">Arrangement</small>
+      </a>
+      <a href="/suno-production-ua.html" data-page="suno-production">
+        <span data-t="spSuno">Продакшен із Suno AI</span>
+        <small data-t="spSunoD">Suno AI production</small>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section id="process" style="background:var(--bg2)"><div class="wrap">
   <h2 data-t="pH">Як це працює</h2><p class="sub" data-t="pSub">Усе відбувається онлайн, без поїздок і зайвих кроків.</p>
   <ol class="steps">
@@ -189,7 +214,12 @@ p4:"Отримуєте результат",p4d:"Готові файли надс
 wH:"Приклади робіт",wSub:"Тут з’являться приклади «до і після»: сирий вокал і готове зведення.",soon:"Скоро",
 aH:"Про мене",a1:"Мене звати Віталій. Понад 15 років працюю у звукорежисурі та спеціалізуюсь на поп- і реп-матеріалі. Веду пісню від запису вокалу до фінального мастерингу, допомагаю з аранжуваннями й текстами.",
 a2:"Пісні, створені в Suno, доводжу до студійного звучання. Працюю швидко та якісно.",
-cH:"Напишіть мені",cSub:"Найшвидше відповідаю в Telegram. Опишіть пісню та що потрібно зробити.",foot:"Київ, Україна. Працюю по всьому світу"
+cH:"Напишіть мені",cSub:"Найшвидше відповідаю в Telegram. Опишіть пісню та що потрібно зробити.",foot:"Київ, Україна. Працюю по всьому світу",
+spH:"Послуги окремо",spSub:"Детальніше про кожну послугу та її вартість.",
+spMix:"Зведення музики",spMixD:"Mixing",
+spMaster:"Мастеринг",spMasterD:"Mastering",
+spArr:"Аранжування музики",spArrD:"Arrangement",
+spSuno:"Продакшен із Suno AI",spSunoD:"Suno AI production"
 },
 en:{
 n1:"Services",n2:"How it works",n3:"Samples",n4:"About",n5:"Contact",order:"Order now",seePrice:"See pricing",
@@ -206,7 +236,12 @@ p4:"You get the result",p4d:"I send the finished files online.",
 wH:"Samples",wSub:"Before-and-after examples will appear here: raw vocal and the finished mix.",soon:"Soon",
 aH:"About me",a1:"I’m Vitaliy. I’ve worked in audio engineering for over 15 years, specializing in pop and rap. I take a song from vocal recording to final mastering and help with arrangements.",
 a2:"I also bring songs created in Suno up to studio quality. Fast turnaround, high quality.",
-cH:"Get in touch",cSub:"Telegram is the fastest way to reach me. Tell me about your song and what you need.",foot:"Kyiv, Ukraine. Working worldwide"
+cH:"Get in touch",cSub:"Telegram is the fastest way to reach me. Tell me about your song and what you need.",foot:"Kyiv, Ukraine. Working worldwide",
+spH:"Explore Our Services",spSub:"Learn more about each service and its pricing.",
+spMix:"Online Music Mixing",spMixD:"Mixing",
+spMaster:"Online Music Mastering",spMasterD:"Mastering",
+spArr:"Online Music Arrangement",spArrD:"Arrangement",
+spSuno:"Suno AI Music Production",spSunoD:"Suno AI production"
 }
 };
 
@@ -251,6 +286,11 @@ function setLang(l){
 
   document.querySelectorAll("[data-t]").forEach(e=>{
     if(t[e.dataset.t]!==undefined)e.textContent=t[e.dataset.t];
+  });
+
+  document.querySelectorAll("[data-page]").forEach(a=>{
+    const page=a.dataset.page;
+    a.href="/"+page+(l==="en"?".html":"-ua.html");
   });
 
   $("#list").innerHTML=S.filter(s=>!(k&&s[6])).map(s=>
