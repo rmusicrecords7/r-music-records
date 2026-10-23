@@ -1,12 +1,7 @@
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rmusicrecords.com/</loc>
-  </url>
-  <url>
-    <loc>https://rmusicrecords.com/mixing.html</loc>
-  </url>
-  <url>
-    <loc>https://rmusicrecords.com/mixing-ua.html</loc>
-  </url>
+  <url><loc>https://rmusicrecords.com/</loc></url>
+  <url><loc>https://rmusicrecords.com/mixing.html</loc></url>
+  <url><loc>https://rmusicrecords.com/mixing-ua.html</loc></url>
+  <url><loc>https://rmusicrecords.com/mastering.html</loc></url>
+  <url><loc>https://rmusicrecords.com/mastering-ua.html</loc></url>
 </urlset>
