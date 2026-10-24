@@ -11,7 +11,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Online Music Mastering | R Music Records","description":"Online mastering for tonal balance, dynamics, loudness and digital release preparation. R Music Records in Kyiv, Ukraine, working with artists worldwide.","url":"https://rmusicrecords.com/mastering.html","provider":{"@type":"ProfessionalService","name":"R Music Records","url":"https://rmusicrecords.com/"},"areaServed":["Ukraine","Europe","Worldwide"],"serviceType":"Music mastering"}</script>
 </head><body>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="/"><span class="brand-mark">R</span><span>R MUSIC<small>RECORDS · AUDIO PRODUCTION</small></span></a>
-<nav><a href="/#services">Services</a><a href="/#pricing">Pricing</a><a href="/#about">About</a><a href="/blog.html">Blog</a></nav>
+<nav id="primary-nav"><a href="/#services">Services</a><a href="/#pricing">Pricing</a><a href="/#about">About</a><a href="/blog.html">Blog</a></nav>
+<button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
 <div class="header-actions"><div class="lang"><a class="btn btn-ghost" style="padding:6px 10px;font-size:12px" href="/mastering-ua.html">UA</a></div><a class="btn header-cta" href="https://t.me/r_music_records" target="_blank" rel="noopener">Discuss a project ↗</a></div>
 </div></header>
 <main>
@@ -29,4 +30,5 @@
 <div class="contact-panel service-cta"><div><div class="eyebrow">YOUR MUSIC, NEXT STEP</div><h2>Tell me about your project</h2><p>Send a demo or briefly describe the task. We can discuss options, pricing, and timing before work begins.</p></div><div class="contact-actions"><a class="btn" href="https://t.me/r_music_records" target="_blank" rel="noopener">Telegram ↗</a><a class="btn btn-ghost" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener">Instagram ↗</a></div></div>
 </div></section>
 </main><footer><div class="wrap footer-inner"><a class="brand" href="/"><span class="brand-mark">R</span><span>R MUSIC<small>RECORDS · AUDIO PRODUCTION</small></span></a><div class="footer-links"><a href="mailto:r.music.records7@gmail.com">Email</a><a href="/blog.html">Blog</a><a href="/">Home</a></div><span>© 2026 R Music Records</span></div></footer>
+<script>(function(){const toggle=document.querySelector(".mobile-menu-toggle");const nav=document.querySelector("#primary-nav");if(!toggle||!nav)return;toggle.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")!=="true";toggle.setAttribute("aria-expanded",String(open));nav.classList.toggle("is-open",open);toggle.setAttribute("aria-label",open?"Close menu":"Open menu");});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open");toggle.setAttribute("aria-label","Open menu");}));})();</script>
 </body></html>
