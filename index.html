@@ -141,7 +141,7 @@ function setLanguage(lang){
  priceList.innerHTML=services.filter(s=>!(lang==="en"&&s[6])).map(s=>'<article class="price-row"><h3>'+s[lang==="en"?1:0]+'</h3><div class="price">'+s[lang==="en"?5:4]+'</div><p>'+s[lang==="en"?3:2]+'</p></article>').join("");
  try{localStorage.setItem("rmr-lang",lang)}catch(e){}
 }
-document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang)));
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.lang==="en"&&location.pathname!=="/index-en.html"){location.href="/index-en.html";return;}if(b.dataset.lang==="uk"&&location.pathname==="/index-en.html"){location.href="/";return;}setLanguage(b.dataset.lang);}));
 let initial="uk";try{initial=localStorage.getItem("rmr-lang")||((navigator.language||"").toLowerCase().startsWith("en")?"en":"uk")}catch(e){}
 setLanguage(initial);
 </script>
