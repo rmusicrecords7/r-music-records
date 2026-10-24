@@ -11,7 +11,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Аранжування музики онлайн — R Music Records","description":"Створення, доопрацювання та переробка музичних аранжувань онлайн. Від ідеї або демо до цілісної композиції.","url":"https://rmusicrecords.com/arrangement-ua.html","provider":{"@type":"ProfessionalService","name":"R Music Records","url":"https://rmusicrecords.com/"},"areaServed":["Ukraine","Europe","Worldwide"],"serviceType":"Music arrangement"}</script>
 </head><body>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="/"><span class="brand-mark">R</span><span>R MUSIC<small>RECORDS · AUDIO PRODUCTION</small></span></a>
-<nav><a href="/#services">Послуги</a><a href="/#pricing">Ціни</a><a href="/#about">Про мене</a><a href="/blog.html">Блог</a></nav>
+<nav id="primary-nav"><a href="/#services">Послуги</a><a href="/#pricing">Ціни</a><a href="/#about">Про мене</a><a href="/blog.html">Блог</a></nav>
+<button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
 <div class="header-actions"><div class="lang"><a class="btn btn-ghost" style="padding:6px 10px;font-size:12px" href="/arrangement.html">EN</a></div><a class="btn header-cta" href="https://t.me/r_music_records" target="_blank" rel="noopener">Обговорити проєкт ↗</a></div>
 </div></header>
 <main>
@@ -29,4 +30,5 @@
 <div class="contact-panel service-cta"><div><div class="eyebrow">ТВОЯ МУЗИКА — НАСТУПНИЙ КРОК</div><h2>Розкажи про свій проєкт</h2><p>Надішли демо або коротко опиши задачу. Обговоримо можливості, ціну та терміни до початку роботи.</p></div><div class="contact-actions"><a class="btn" href="https://t.me/r_music_records" target="_blank" rel="noopener">Telegram ↗</a><a class="btn btn-ghost" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener">Instagram ↗</a></div></div>
 </div></section>
 </main><footer><div class="wrap footer-inner"><a class="brand" href="/"><span class="brand-mark">R</span><span>R MUSIC<small>RECORDS · AUDIO PRODUCTION</small></span></a><div class="footer-links"><a href="mailto:r.music.records7@gmail.com">Email</a><a href="/blog.html">Блог</a><a href="/">Головна</a></div><span>© 2026 R Music Records</span></div></footer>
+<script>(function(){const toggle=document.querySelector(".mobile-menu-toggle");const nav=document.querySelector("#primary-nav");if(!toggle||!nav)return;toggle.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")!=="true";toggle.setAttribute("aria-expanded",String(open));nav.classList.toggle("is-open",open);toggle.setAttribute("aria-label",open?"Close menu":"Open menu");});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open");toggle.setAttribute("aria-label","Open menu");}));})();</script>
 </body></html>
