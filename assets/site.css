@@ -193,3 +193,74 @@ nav#primary-nav a{color:#333941;border-color:#e5e1d9}
  .home-redesign .about-photo img{min-height:300px}
  .home-redesign .contact-panel{padding:26px 22px}
 }
+
+
+/* High-contrast monochrome direction inspired by LevelSound */
+.home-redesign{
+ --bg:#050505;--panel:#101010;--panel2:#171717;--text:#ffffff;
+ --muted:#c5c5c5;--line:#343434;--amber:#ffffff;--red:#ffffff;
+ --grad:linear-gradient(110deg,#fff,#dedede);
+}
+.home-redesign body{background:#050505;color:#fff}
+.home-redesign .site-header{background:rgba(5,5,5,.94);border-bottom-color:#292929}
+.home-redesign .brand-mark{background:#fff;color:#050505}
+.home-redesign nav{color:#f0f0f0}
+.home-redesign nav a:hover,.home-redesign .card-link:hover,
+.home-redesign .blog-card h3 a:hover{color:#bdbdbd}
+.home-redesign .btn{background:#fff;color:#050505;border-color:#fff;border-radius:2px;box-shadow:none}
+.home-redesign .btn:hover{background:#dedede;border-color:#dedede;box-shadow:none}
+.home-redesign .btn-ghost{background:transparent;color:#fff;border-color:#777}
+.home-redesign .btn-ghost:hover{background:#fff;color:#050505;border-color:#fff}
+.home-redesign .accent{background:none;color:#fff;-webkit-text-fill-color:#fff}
+.home-redesign .eyebrow{color:#e5e5e5;letter-spacing:.16em}
+.home-redesign .eyebrow:before{background:#fff}
+.home-redesign .hero:before{background:radial-gradient(circle,#ffffff0a,transparent 70%)}
+.home-redesign .hero-photo{border-color:#3a3a3a;box-shadow:16px 16px 0 #ffffff0a}
+.home-redesign .photo-caption span{color:#e0e0e0}
+.home-redesign .trust-strip,.home-redesign .section-alt{background:#0b0b0b;border-color:#292929}
+.home-redesign .trust-item{border-color:#292929}
+.home-redesign .trust-item span,.home-redesign .section-head p,
+.home-redesign .section-intro,.home-redesign .hero-note,
+.home-redesign .pricing-copy p,.home-redesign .service-card p,
+.home-redesign .blog-card p,.home-redesign .outcome-card p{color:#c5c5c5}
+.home-redesign .service-card{background:#0d0d0d;border-color:#343434;border-radius:2px}
+.home-redesign .service-card:hover{background:#141414;border-color:#a6a6a6}
+.home-redesign .service-number{background:#fff;color:#050505;border-radius:2px}
+.home-redesign .card-link,.home-redesign .blog-read{color:#fff}
+.home-redesign .price-row .price,.home-redesign .blog-card-tag{color:#fff}
+.home-redesign .blog-card{background:#0d0d0d;border-color:#343434;border-radius:2px}
+.home-redesign .blog-card:hover{border-color:#aaa}
+.home-redesign .outcome-card,.home-redesign .process-card{background:#0d0d0d;border-color:#343434;border-radius:2px}
+.home-redesign .outcome-card .outcome-no{color:#fff}
+.home-redesign .gallery-stage{border-color:#333;border-radius:2px}
+.home-redesign .gallery-controls button{border-radius:2px}
+.home-redesign .gallery-arrow{background:#fff;color:#050505;border-color:#fff}
+.home-redesign .gallery-arrow:hover{background:#ddd;color:#050505;border-color:#ddd}
+.home-redesign .gallery-dot.is-active{background:#fff}
+.home-redesign .gallery-dot{background:#555}
+.home-redesign .gallery-counter{color:#ddd}
+.home-redesign .pricing-list,.home-redesign .price-row{border-color:#333}
+.home-redesign .faq-list details{border-color:#333;border-radius:2px}
+.home-redesign .contact-panel{background:#0c0c0c;border-color:#444;border-radius:2px}
+.home-redesign footer{border-color:#292929}
+.home-redesign .lang{border-color:#444;border-radius:2px}
+.home-redesign .lang button[aria-pressed=true]{background:#fff;color:#050505}
+.home-redesign a:focus-visible,.home-redesign button:focus-visible{outline-color:#fff}
+.home-redesign .hero h1,.home-redesign .section h2,.home-redesign .section-head h2,
+.home-redesign .about-copy h2,.home-redesign .pricing-copy h2,.home-redesign .contact-panel h2{color:#fff}
+.home-redesign .service-card,.home-redesign .blog-card,.home-redesign .outcome-card,
+.home-redesign .process-card,.home-redesign .contact-panel{box-shadow:none}
+.home-redesign .service-card,.home-redesign .blog-card,.home-redesign .outcome-card,
+.home-redesign .process-card,.home-redesign .gallery-stage,.home-redesign .contact-panel{transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .25s,background .25s}
+.home-redesign .service-card:hover,.home-redesign .blog-card:hover,.home-redesign .outcome-card:hover{transform:translateY(-4px)}
+/* Restrained scroll reveals; content remains visible if JavaScript is unavailable */
+.home-redesign.motion-ready [data-reveal]{opacity:0;transform:translate3d(0,24px,0);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.home-redesign.motion-ready [data-reveal="left"]{transform:translate3d(-24px,0,0)}
+.home-redesign.motion-ready [data-reveal="right"]{transform:translate3d(24px,0,0)}
+.home-redesign.motion-ready [data-reveal].is-visible{opacity:1;transform:translate3d(0,0,0)}
+.home-redesign [data-stagger]>*{transition-delay:var(--reveal-delay,0ms)}
+.home-redesign .hero [data-reveal]{transition-duration:.85s}
+@media(prefers-reduced-motion:reduce){
+ .home-redesign.motion-ready [data-reveal]{opacity:1;transform:none;transition:none}
+ .home-redesign .service-card,.home-redesign .blog-card,.home-redesign .outcome-card{transition:none}
+}
