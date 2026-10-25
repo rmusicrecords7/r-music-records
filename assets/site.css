@@ -308,18 +308,3 @@ footer{border-color:#26364a;color:#aab9cb}
 .hero-lead-detail{display:block;color:#b9c8da;font-size:.88em;line-height:1.7}
 @media(max-width:720px){.hero-services{font-size:1em}.hero-lead-detail{font-size:.9em}}
 
-
-/* Slow, floating glossy spheres in the hero — inspired by the reference's motion language */
-.home-redesign .hero{position:relative;isolation:isolate;overflow:hidden}
-.home-redesign .hero .hero-grid{position:relative;z-index:2}
-.home-redesign .floating-orbs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;contain:paint}
-.home-redesign .floating-orbs .orb{position:absolute;display:block;border-radius:50%;will-change:transform;opacity:.78;filter:blur(.15px);mix-blend-mode:screen}
-.home-redesign .floating-orbs .orb-one{width:clamp(90px,13vw,190px);aspect-ratio:1;left:47%;top:8%;background:radial-gradient(circle at 30% 25%,rgba(224,243,255,.96) 0%,rgba(105,176,255,.8) 9%,rgba(40,105,211,.6) 31%,rgba(17,40,80,.35) 57%,rgba(8,14,24,0) 73%);box-shadow:inset -16px -20px 34px rgba(2,8,22,.42),0 0 46px rgba(57,120,237,.12);animation:orb-drift-one 17s ease-in-out infinite}
-.home-redesign .floating-orbs .orb-two{width:clamp(52px,7vw,100px);aspect-ratio:1;left:73%;top:43%;background:radial-gradient(circle at 28% 24%,rgba(239,249,255,.96) 0%,rgba(139,198,255,.82) 8%,rgba(58,121,226,.68) 33%,rgba(18,41,77,.38) 62%,rgba(8,14,24,0) 75%);box-shadow:inset -10px -12px 22px rgba(2,8,22,.45),0 0 32px rgba(57,120,237,.13);animation:orb-drift-two 13s ease-in-out infinite}
-.home-redesign .floating-orbs .orb-three{width:clamp(34px,4vw,58px);aspect-ratio:1;left:56%;top:67%;background:radial-gradient(circle at 28% 24%,rgba(255,255,255,.98) 0%,rgba(157,208,255,.8) 10%,rgba(66,135,239,.62) 37%,rgba(15,33,65,.24) 67%,rgba(8,14,24,0) 76%);box-shadow:0 0 26px rgba(87,160,255,.15);animation:orb-drift-three 11s ease-in-out infinite}
-.home-redesign .floating-orbs .orb-four{width:clamp(20px,2.3vw,34px);aspect-ratio:1;left:84%;top:18%;background:radial-gradient(circle at 28% 24%,rgba(255,255,255,.98) 0%,rgba(164,215,255,.86) 12%,rgba(72,140,239,.62) 42%,rgba(8,14,24,0) 76%);animation:orb-drift-two 15s ease-in-out infinite reverse}
-@keyframes orb-drift-one{0%,100%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(-28px,24px,0) rotate(8deg)}}
-@keyframes orb-drift-two{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(19px,-25px,0)}}
-@keyframes orb-drift-three{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-17px,-20px,0) scale(1.08)}}
-@media(max-width:720px){.home-redesign .floating-orbs .orb-one{left:55%;top:4%;width:110px}.home-redesign .floating-orbs .orb-two{left:75%;top:47%;width:64px}.home-redesign .floating-orbs .orb-three{left:55%;top:76%}.home-redesign .floating-orbs .orb-four{left:84%;top:23%}}
-@media(prefers-reduced-motion:reduce){.home-redesign .floating-orbs .orb{animation:none}}
