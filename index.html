@@ -46,7 +46,7 @@
 <div class="lang" role="group" aria-label="Language">
 <button type="button" data-lang="uk" aria-pressed="true">UA</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
 </div>
-<a class="btn header-cta" href="https://t.me/r_music_records" target="_blank" rel="noopener" data-ua="Обговорити проєкт ↗" data-en="Discuss a project ↗">Обговорити проєкт ↗</a>
+<a class="btn header-cta" href="#contact-choice" data-contact-choice="true" data-ua="Обговорити проєкт ↗" data-en="Discuss a project ↗">Обговорити проєкт ↗</a>
 </div>
 </div></header>
 <main>
@@ -125,7 +125,7 @@
 </div></section>
 
 <section class="section section-alt" id="pricing"><div class="wrap pricing">
-<div class="pricing-copy"><div class="eyebrow" data-ua="ПРОЗОРІ УМОВИ" data-en="CLEAR PRICING">ПРОЗОРІ УМОВИ</div><h2 data-ua="Послуги та ціни" data-en="Services & pricing">Послуги та ціни</h2><p data-ua="Базові тарифи наведені нижче. Для складних завдань обсяг роботи, терміни та фінальну вартість погоджуємо до початку продакшену." data-en="The base rates are listed here. For complex projects, we agree on scope, timeline, and final cost before production begins.">Базові тарифи наведені нижче. Для складних завдань обсяг роботи, терміни та фінальну вартість погоджуємо до початку продакшену.</p><a class="btn" href="https://t.me/r_music_records" target="_blank" rel="noopener" data-ua="Уточнити вартість ↗" data-en="Discuss your project ↗">Уточнити вартість ↗</a><p class="price-note" data-ua="Ціни залишені відповідно до чинного прайсу R Music Records." data-en="Rates reflect the current R Music Records price list.">Ціни залишені відповідно до чинного прайсу R Music Records.</p></div>
+<div class="pricing-copy"><div class="eyebrow" data-ua="ПРОЗОРІ УМОВИ" data-en="CLEAR PRICING">ПРОЗОРІ УМОВИ</div><h2 data-ua="Послуги та ціни" data-en="Services & pricing">Послуги та ціни</h2><p data-ua="Базові тарифи наведені нижче. Для складних завдань обсяг роботи, терміни та фінальну вартість погоджуємо до початку продакшену." data-en="The base rates are listed here. For complex projects, we agree on scope, timeline, and final cost before production begins.">Базові тарифи наведені нижче. Для складних завдань обсяг роботи, терміни та фінальну вартість погоджуємо до початку продакшену.</p><a class="btn" href="#contact-choice" data-contact-choice="true" data-ua="Уточнити вартість ↗" data-en="Discuss your project ↗">Уточнити вартість ↗</a><p class="price-note" data-ua="Ціни залишені відповідно до чинного прайсу R Music Records." data-en="Rates reflect the current R Music Records price list.">Ціни залишені відповідно до чинного прайсу R Music Records.</p></div>
 <div class="pricing-list" id="price-list" aria-live="polite">
 <article class="price-row"><h3>Запис вокалу</h3><div class="price">1 000 ₴ / год</div><p>Студійний запис голосу з налаштуванням звуку під артиста.</p></article>
 <article class="price-row"><h3>Зведення мультитреку з вокалом</h3><div class="price">4 500 ₴</div><p>Баланс усіх доріжок пісні, обробка, простір і глибина.</p></article>
@@ -258,5 +258,46 @@ setLanguage(initial);
  });
 })();
 </script>
-\n</body>
+\n
+<div class="contact-choice-backdrop" id="contact-choice" aria-hidden="true">
+  <section class="contact-choice-modal" role="dialog" aria-modal="true" aria-labelledby="contact-choice-title">
+    <button class="contact-choice-close" type="button" aria-label="Закрити вікно">&times;</button>
+    <p class="eyebrow">R MUSIC RECORDS</p>
+    <h2 id="contact-choice-title">Обери, де зручно написати</h2>
+    <p>Напиши мені в Instagram або Telegram — обговоримо твій проєкт.</p>
+    <div class="contact-choice-actions">
+      <a class="btn" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a class="btn btn-ghost" href="https://t.me/r_music_records" target="_blank" rel="noopener">Telegram ↗</a>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+ const modal=document.getElementById("contact-choice");
+ if(!modal)return;
+ const closeButton=modal.querySelector(".contact-choice-close");
+ let lastTrigger=null;
+ function openModal(event){
+   event.preventDefault();
+   lastTrigger=event.currentTarget;
+   modal.classList.add("is-open");
+   modal.setAttribute("aria-hidden","false");
+   document.body.classList.add("contact-choice-open");
+   closeButton.focus();
+ }
+ function closeModal(){
+   modal.classList.remove("is-open");
+   modal.setAttribute("aria-hidden","true");
+   document.body.classList.remove("contact-choice-open");
+   if(lastTrigger)lastTrigger.focus();
+ }
+ document.querySelectorAll("[data-contact-choice]").forEach(el=>el.addEventListener("click",openModal));
+ closeButton.addEventListener("click",closeModal);
+ modal.addEventListener("click",event=>{if(event.target===modal)closeModal();});
+ document.addEventListener("keydown",event=>{if(event.key==="Escape"&&modal.classList.contains("is-open"))closeModal();});
+})();
+</script>
+
+</body>
 </html>
