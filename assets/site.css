@@ -155,3 +155,41 @@ nav#primary-nav a{color:#333941;border-color:#e5e1d9}
 .blog-read:hover{color:#783620}
 @media(max-width:850px){.blog-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.blog-cards{grid-template-columns:1fr}.blog-card{min-height:unset;padding:21px}}
+
+
+/* Homepage refresh: clearer editorial hierarchy inspired by modern mixing-engineer portfolios.
+   Original R Music Records copy, assets, links, and contact details are retained. */
+.home-redesign .site-header{background:rgba(16,15,16,.96);border-bottom-color:rgba(255,191,71,.18)}
+.home-redesign .hero{padding-top:clamp(58px,8vw,104px);padding-bottom:clamp(56px,7vw,88px)}
+.home-redesign .hero-grid{gap:clamp(32px,5vw,76px)}
+.home-redesign .hero-photo{border-radius:8px;min-height:440px;aspect-ratio:4/4.6;box-shadow:18px 18px 0 rgba(240,90,67,.10)}
+.home-redesign .photo-caption{left:24px;right:24px;bottom:24px}
+.home-redesign .section{padding-block:clamp(64px,8vw,100px)}
+.home-redesign .section-alt{background:linear-gradient(180deg,#171415 0%,#141112 100%);border-block:1px solid rgba(255,255,255,.055)}
+.home-redesign .section-head{margin-bottom:34px;gap:28px}
+.home-redesign .section-head h2,.home-redesign .about-copy h2,.home-redesign .pricing-copy h2,.home-redesign .contact-panel h2{letter-spacing:-.045em;line-height:1.08}
+.home-redesign .section-head h2{font-size:clamp(30px,4vw,48px);max-width:780px}
+.home-redesign .services-grid{gap:14px}
+.home-redesign .service-card{border-radius:8px;padding:28px;background:linear-gradient(145deg,#1e1a1a,#171415);border-color:#3c3030;transition:transform .2s,border-color .2s,background .2s}
+.home-redesign .service-card:hover{transform:translateY(-4px);border-color:#f05a43;background:#211918}
+.home-redesign .service-number{color:var(--red)}
+.home-redesign .about-photo{border-radius:8px;overflow:hidden}
+.home-redesign .about-photo img{min-height:430px;object-fit:cover}
+.home-redesign .gallery-stage{border-radius:8px}
+.home-redesign .outcome-card,.home-redesign .process-card,.home-redesign .blog-card{border-radius:8px}
+.home-redesign .pricing-list{border-top:1px solid var(--line)}
+.home-redesign .price-row{padding:20px 0;border-bottom:1px solid var(--line)}
+.home-redesign .price-row .price{color:var(--amber);font-variant-numeric:tabular-nums}
+.home-redesign .blog-card{padding:26px;background:#191617;border:1px solid #3a3030}
+.home-redesign .blog-card h3{line-height:1.3}
+.home-redesign .blog-card:hover{border-color:#f05a43}
+.home-redesign .faq-list details{border-radius:6px}
+.home-redesign .contact-panel{border-radius:8px;border:1px solid #4a3430;background:linear-gradient(120deg,#211919,#171415);padding:clamp(28px,5vw,56px)}
+.home-redesign footer{border-top:1px solid rgba(255,191,71,.16)}
+@media(max-width:760px){
+ .home-redesign .hero{padding-top:46px}
+ .home-redesign .hero-photo{min-height:320px;aspect-ratio:1/1}
+ .home-redesign .section{padding-block:58px}
+ .home-redesign .about-photo img{min-height:300px}
+ .home-redesign .contact-panel{padding:26px 22px}
+}
