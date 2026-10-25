@@ -276,3 +276,17 @@ nav#primary-nav a{color:#333941;border-color:#e5e1d9}
 body{font-family:Inter,Helvetica,Arial,sans-serif;letter-spacing:-.015em}
 h1,h2,h3,h4,.brand,.eyebrow,.btn,nav{font-family:Inter,Helvetica,Arial,sans-serif;letter-spacing:-.035em}
 .hero h1,.home-redesign .hero h1,.section h2,.section-head h2,.about-copy h2,.pricing-copy h2,.contact-panel h2{font-weight:800;letter-spacing:-.045em}
+
+/* Contact channel choice popup — Ukrainian homepage */
+.contact-choice-backdrop{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:22px;opacity:0;visibility:hidden;transition:opacity .2s ease,visibility .2s ease}
+.contact-choice-backdrop.is-open{opacity:1;visibility:visible}
+.contact-choice-modal{position:relative;width:min(100%,440px);padding:34px;border:1px solid #4a3931;border-radius:14px;background:#191718;color:#f8f5f0;box-shadow:0 24px 90px rgba(0,0,0,.45);transform:translateY(10px);transition:transform .2s ease}
+.contact-choice-backdrop.is-open .contact-choice-modal{transform:translateY(0)}
+.contact-choice-modal h2{margin:6px 24px 10px 0;font-size:clamp(24px,4vw,31px);line-height:1.2;letter-spacing:-.04em;color:#f8f5f0}
+.contact-choice-modal p:not(.eyebrow){color:#c8bfba;margin:0 0 22px}
+.contact-choice-modal .eyebrow{margin:0 0 8px;color:var(--amber)}
+.contact-choice-close{position:absolute;right:13px;top:10px;border:0;background:transparent;color:#f8f5f0;font-size:30px;line-height:1;cursor:pointer;padding:5px}
+.contact-choice-actions{display:flex;gap:10px;flex-wrap:wrap}
+.contact-choice-actions .btn{flex:1;text-align:center;justify-content:center}
+body.contact-choice-open{overflow:hidden}
+@media(max-width:480px){.contact-choice-modal{padding:28px 22px}.contact-choice-actions{flex-direction:column}}
