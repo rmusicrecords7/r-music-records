@@ -161,7 +161,14 @@
 
 <section class="section section-alt" id="contact"><div class="wrap contact-panel"><div><div class="eyebrow" data-ua="ПОЧНЕМО З ТВОЄЇ ІДЕЇ" data-en="START WITH YOUR IDEA">ПОЧНЕМО З ТВОЄЇ ІДЕЇ</div><h2 data-ua="Розкажи, що хочеш почути у своєму треку" data-en="Tell me how you want your track to sound">Розкажи, що хочеш почути у своєму треку</h2><p data-ua="Надішли демо, референс або просто опиши задачу. Обговоримо можливості, вартість і наступні кроки." data-en="Send a demo, a reference, or simply describe the task. We’ll discuss options, cost, and next steps.">Надішли демо, референс або просто опиши задачу. Обговоримо можливості, вартість і наступні кроки.</p></div><div class="contact-actions"><a class="btn" href="https://t.me/r_music_records" target="_blank" rel="noopener" aria-label="Telegram R Music Records">Telegram ↗</a><a class="btn btn-ghost" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener" aria-label="Instagram R Music Records">Instagram ↗</a></div></div></section>
 
-<section class="section" id="blog"><div class="wrap blog-preview"><div><div class="eyebrow" data-ua="БЛОГ R MUSIC RECORDS" data-en="R MUSIC RECORDS BLOG">БЛОГ R MUSIC RECORDS</div><h3 data-ua="Практичні думки про звук, продакшен і Suno AI" data-en="Notes on sound, production, and Suno AI">Практичні думки про звук, продакшен і Suno AI</h3><p data-ua="Статті та спостереження з практики музичного продакшену." data-en="Articles and observations from music production practice.">Статті та спостереження з практики музичного продакшену.</p></div><a class="btn btn-ghost" href="/blog.html" data-ua="Читати блог ↗" data-en="Read the blog ↗">Читати блог ↗</a></div></section>
+<section class="section" id="blog"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">БЛОГ R MUSIC RECORDS</div><h2>Практичні думки про звук, продакшен і Suno AI</h2><p>Статті та спостереження з практики музичного продакшену.</p></div><a class="btn btn-ghost" href="/blog.html">Усі статті →</a></div>
+<div class="blog-cards">
+<article class="blog-card"><span class="blog-card-tag">Suno AI · Практичний посібник</span><h3><a href="/suno-ai-song-improvement-ua.html">Як покращити пісню, створену в Suno AI</a></h3><p>Практичні кроки від оцінки генерації до аранжування, зведення та мастерингу.</p><a class="blog-read" href="/suno-ai-song-improvement-ua.html">Читати статтю →</a></article>
+<article class="blog-card"><span class="blog-card-tag">Spotify · Suno AI</span><h3><a href="/spotify-ai-music-spam-ua.html">Spotify відфільтрував 50 млн AI-треків: що це означає для музикантів?</a></h3><p>Чому платформи борються зі спамом і як можна розвинути трек, створений із допомогою AI.</p><a class="blog-read" href="/spotify-ai-music-spam-ua.html">Читати статтю →</a></article>
+<article class="blog-card"><span class="blog-card-tag">Suno AI · Продюсування</span><h3><a href="/suno-ai-music-producer-arrangement-ua.html">Нейромережа зробила аранжування. Навіщо тоді потрібен продюсер?</a></h3><p>Як використати Suno як відправну точку та створити індивідуальне аранжування.</p><a class="blog-read" href="/suno-ai-music-producer-arrangement-ua.html">Читати статтю →</a></article>
+</div>
+</div></section>
 </main>
 <footer><div class="wrap footer-inner"><a class="brand" href="/"><span class="brand-mark">R</span><span>R MUSIC<small>RECORDS · AUDIO PRODUCTION</small></span></a><div class="footer-links"><a href="/mixing-ua.html" data-ua="Зведення" data-en="Mixing">Зведення</a><a href="/mastering-ua.html" data-ua="Мастеринг" data-en="Mastering">Мастеринг</a><a href="/arrangement-ua.html" data-ua="Аранжування" data-en="Arrangement">Аранжування</a><a href="/suno-production-ua.html">Suno AI</a><a href="/blog.html" data-ua="Блог" data-en="Blog">Блог</a></div><span>© 2026 R Music Records · Kyiv, Ukraine</span></div></footer>
 <script>
@@ -187,8 +194,13 @@ function setLanguage(lang){
  priceList.innerHTML=services.filter(s=>!(lang==="en"&&s[6])).map(s=>'<article class="price-row"><h3>'+s[lang==="en"?1:0]+'</h3><div class="price">'+s[lang==="en"?5:4]+'</div><p>'+s[lang==="en"?3:2]+'</p></article>').join("");
  try{localStorage.setItem("rmr-lang",lang)}catch(e){}
 }
-document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.lang==="en"&&location.pathname!=="/index-en.html"){location.href="/index-en.html";return;}if(b.dataset.lang==="uk"&&location.pathname==="/index-en.html"){location.href="/";return;}setLanguage(b.dataset.lang);}));
-let initial="uk";try{initial=localStorage.getItem("rmr-lang")||((navigator.language||"").toLowerCase().startsWith("en")?"en":"uk")}catch(e){}
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{
+ const target=b.dataset.lang==="en"?"/index-en.html":"/";
+ const current=location.pathname;
+ if((target==="/"&&(current==="/"||current==="/index.html"))||current===target)return;
+ location.href=target;
+}));
+const initial=location.pathname==="/index-en.html"?"en":"uk";
 setLanguage(initial);
 </script>
 <script>(function(){const toggle=document.querySelector(".mobile-menu-toggle");const nav=document.querySelector("#primary-nav");if(!toggle||!nav)return;toggle.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")!=="true";toggle.setAttribute("aria-expanded",String(open));nav.classList.toggle("is-open",open);toggle.setAttribute("aria-label",open?"Close menu":"Open menu");});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open");toggle.setAttribute("aria-label","Open menu");}));})();</script>
