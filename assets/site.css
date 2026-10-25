@@ -266,45 +266,7 @@ nav#primary-nav a{color:#333941;border-color:#e5e1d9}
 }
 
 
-/* Unified R Music Records palette: graphite + blue */
-:root{--bg:#0b111a;--panel:#111b28;--panel2:#172436;--text:#f4f7fb;--muted:#b2c0d0;--line:#2b3a4d;--amber:#70b4ff;--red:#4d8df5;--grad:linear-gradient(115deg,#3978ed,#63b8f5)}
-body{background:#0b111a;color:#f4f7fb}
-.site-header{background:rgba(11,17,26,.95);border-bottom-color:#26364a}
-.brand{color:#f4f7fb}.brand-mark{background:#3978ed;color:#fff}.brand small{color:#9cacc0}
-nav{color:#dce6f2}nav a:hover,footer a:hover{color:#70b4ff}
-.lang{background:#111b28;border-color:#33465d}.lang button{color:#b2c0d0}.lang button[aria-pressed=true]{background:#3978ed;color:#fff}
-.btn,.home-redesign .btn{background:#3978ed;color:#fff;border-color:#3978ed;border-radius:5px;box-shadow:none}
-.btn:hover,.home-redesign .btn:hover{background:#2e68d3;border-color:#2e68d3;box-shadow:0 8px 24px rgba(57,120,237,.2)}
-.btn-ghost,.home-redesign .btn-ghost{background:transparent;color:#f4f7fb;border-color:#52647b}
-.btn-ghost:hover,.home-redesign .btn-ghost:hover{background:#172436;color:#fff;border-color:#70b4ff;box-shadow:none}
-:focus-visible{outline-color:#70b4ff}
-.eyebrow,.home-redesign .eyebrow{color:#83bdff}.eyebrow:before,.home-redesign .eyebrow:before{background:#70b4ff}
-.accent,.home-redesign .accent{background:none;color:#83bdff;-webkit-text-fill-color:#83bdff}
-.hero:before,.home-redesign .hero:before{background:radial-gradient(circle,rgba(57,120,237,.14),transparent 70%)}
-.hero h1,.home-redesign .hero h1,.section h2,.section-head h2,.about-copy h2,.pricing-copy h2,.contact-panel h2{color:#f4f7fb}
-.hero-lead,.home-redesign .hero-lead{color:#d4deea}.hero-note{color:#aab9cb}
-.trust-strip,.section-alt,.home-redesign .trust-strip,.home-redesign .section-alt{background:#0e1723;border-color:#26364a}
-.trust-item,.trust-grid .trust-item{border-color:#26364a}
-.service-card,.home-redesign .service-card,.blog-card,.home-redesign .blog-card,.outcome-card,.home-redesign .outcome-card,.process-card,.home-redesign .process-card,.related-card,.service-info-card{background:#111b28;border-color:#2b3a4d;color:#f4f7fb}
-.service-card:hover,.home-redesign .service-card:hover,.blog-card:hover,.home-redesign .blog-card:hover,.outcome-card:hover,.home-redesign .outcome-card:hover{border-color:#70b4ff;background:#152337}
-.service-number,.home-redesign .service-number{background:#1a3151;color:#83bdff}
-.card-link,.home-redesign .card-link,.blog-read,.home-redesign .blog-read,.blog-card-tag,.home-redesign .blog-card-tag{color:#83bdff}
-.blog-card h3,.home-redesign .blog-card h3{color:#f4f7fb}
-.blog-card p,.home-redesign .blog-card p,.service-card p,.home-redesign .service-card p,.outcome-card p,.home-redesign .outcome-card p,.process-card p,.home-redesign .process-card p,.section-head p,.home-redesign .section-head p,.section-intro,.pricing-copy p,.about-copy p,.service-info-card p,.service-info-card li{color:#b2c0d0}
-.price,.price-row .price,.home-redesign .price-row .price,.price-main,.price-option span{color:#83bdff}
-.price-panel,.contact-panel,.home-redesign .contact-panel{background:#111b28;border-color:#334b68}.contact-panel p{color:#b2c0d0}
-.gallery-stage,.gallery-item,.gallery-slide,.service-photo,.hero-photo{background:#111b28;border-color:#2b3a4d}
-.gallery-arrow{background:#3978ed;color:#fff;border-color:#3978ed}.gallery-arrow:hover{background:#2e68d3;color:#fff;border-color:#2e68d3}
-.gallery-dot.is-active{background:#70b4ff}.gallery-counter{color:#b2c0d0}
-.faq-list details,details{border-color:#2b3a4d}summary:after{color:#83bdff}
-.about-tags span,.service-highlights span{border-color:#33465d;color:#c6d5e6}
-footer{border-color:#26364a;color:#aab9cb}
-.home-redesign .hero-photo{border-color:#2b3a4d;box-shadow:16px 16px 0 rgba(57,120,237,.12)}
-.home-redesign .blog-card{background:#111b28;border-color:#2b3a4d}
-.home-redesign .contact-panel{background:#111b28;border-color:#334b68}
-.home-redesign .gallery-dot{background:#4b5a6d}.home-redesign .gallery-dot.is-active{background:#70b4ff}
-.home-redesign a:focus-visible,.home-redesign button:focus-visible{outline-color:#83bdff}
+
 .hero-services{display:block;color:#f7faff;font-size:1.04em;font-weight:750;line-height:1.45;letter-spacing:-.015em;margin-bottom:10px}
 .hero-lead-detail{display:block;color:#b9c8da;font-size:.88em;line-height:1.7}
 @media(max-width:720px){.hero-services{font-size:1em}.hero-lead-detail{font-size:.9em}}
-
