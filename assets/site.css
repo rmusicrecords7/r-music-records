@@ -270,3 +270,30 @@ nav#primary-nav a{color:#333941;border-color:#e5e1d9}
 .hero-services{display:block;color:#f7faff;font-size:1.04em;font-weight:750;line-height:1.45;letter-spacing:-.015em;margin-bottom:10px}
 .hero-lead-detail{display:block;color:#b9c8da;font-size:.88em;line-height:1.7}
 @media(max-width:720px){.hero-services{font-size:1em}.hero-lead-detail{font-size:.9em}}
+
+/* Sony Music Studios-inspired monochrome typography */
+:root{color-scheme:light;--bg:#fff;--panel:#f7f7f7;--panel2:#f0f0f0;--text:#111;--muted:#5f5f5f;--line:#dedede}
+body{background:#fff;color:#111;font-family:Inter,Arial,Helvetica,sans-serif}
+.site-header{background:rgba(255,255,255,.94);border-bottom-color:#e5e5e5}
+.brand,.hero h1,.home-redesign .hero h1,.section h2,.section-head h2,.about-copy h2,.pricing-copy h2,.contact-panel h2{color:#111}
+nav{color:#333}nav a:hover,footer a:hover{color:#e56b32}
+.hero-lead,.home-redesign .hero-lead{color:#333}.hero-note{color:#555}
+.trust-strip,.section-alt,.home-redesign .trust-strip,.home-redesign .section-alt{background:#f7f7f7;border-color:#e5e5e5}
+.btn,.home-redesign .btn{background:#111;color:#fff;border-color:#111}
+.btn:hover,.home-redesign .btn:hover{background:#333;border-color:#333}
+.btn-ghost,.home-redesign .btn-ghost{background:transparent;color:#111;border-color:#999}
+.btn-ghost:hover,.home-redesign .btn-ghost:hover{background:#f1f1f1;color:#111;border-color:#111}
+.eyebrow,.home-redesign .eyebrow{color:#c45728}.eyebrow:before,.home-redesign .eyebrow:before{background:#c45728}
+.accent,.home-redesign .accent{background:none;color:#c45728;-webkit-text-fill-color:#c45728}
+.price,.price-row .price,.home-redesign .price-row .price,.price-main,.price-option span{color:#111}
+.price-panel,.contact-panel,.home-redesign .contact-panel{background:#f7f7f7;border-color:#dedede}
+.gallery-stage,.gallery-item,.gallery-slide,.service-photo,.hero-photo{background:#f7f7f7;border-color:#dedede}
+.gallery-arrow{background:#111;color:#fff;border-color:#111}.gallery-arrow:hover{background:#333;color:#fff;border-color:#333}
+.gallery-dot.is-active{background:#111}.gallery-counter{color:#555}
+.faq-list details,details{border-color:#dedede}summary:after{color:#111}
+.about-tags span,.service-highlights span{border-color:#ddd;color:#333}
+footer{border-color:#e5e5e5;color:#555}
+.home-redesign .hero-photo{border-color:#ddd;box-shadow:16px 16px 0 rgba(0,0,0,.06)}
+.home-redesign .blog-card{background:#f7f7f7;border-color:#dedede}
+.home-redesign .gallery-dot{background:#ccc}.home-redesign .gallery-dot.is-active{background:#111}
+.home-redesign a:focus-visible,.home-redesign button:focus-visible{outline-color:#111}
