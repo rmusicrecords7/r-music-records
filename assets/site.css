@@ -298,3 +298,14 @@ body.contact-choice-open{overflow:hidden}
 .home-redesign .lang a{color:#f0f0f0}
 .home-redesign .lang a:hover{background:#2a2a2a;color:#fff}
 .home-redesign .lang a[aria-current="page"]{background:#fff;color:#050505}
+
+/* Language switcher: make every available language visibly clickable */
+.lang{display:inline-flex;align-items:center;gap:4px;padding:4px;background:#e9e6df;border:1px solid #c4beb4;border-radius:5px}
+.lang a{display:inline-flex!important;align-items:center;justify-content:center;min-width:34px;min-height:30px;padding:5px 8px!important;border:1px solid transparent!important;border-radius:3px!important;background:#fdfcf9!important;color:#30343a!important;font-size:12px!important;font-weight:900!important;letter-spacing:.045em!important;line-height:1!important;text-decoration:none!important;opacity:1!important;visibility:visible!important}
+.lang a:hover{background:#d7d3ca!important;border-color:#aaa399!important;color:#111!important}
+.lang a[aria-current="page"]{background:#202329!important;border-color:#202329!important;color:#fff!important}
+.home-redesign .lang{background:#111;border-color:#666}
+.home-redesign .lang a{background:#222!important;border-color:#555!important;color:#fff!important}
+.home-redesign .lang a:hover{background:#444!important;border-color:#aaa!important;color:#fff!important}
+.home-redesign .lang a[aria-current="page"]{background:#fff!important;border-color:#fff!important;color:#050505!important}
+@media(max-width:720px){.lang{gap:3px;padding:3px}.lang a{min-width:31px;min-height:29px;padding:5px 6px!important;font-size:11px!important}}
