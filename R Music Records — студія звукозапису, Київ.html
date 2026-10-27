@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>R Music Records — студія звукозапису, Київ</title>
-<meta name="description" content="Запис вокалу, сведення, мастеринг та аранжування дистанційно з Києва по Україні та всьому світу.">
+<title>R Music Records — студія звукозапису онлайн</title>
+<meta name="description" content="Запис вокалу, зведення, мастеринг та аранжування дистанційно. Від демо до готового релізу.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -162,7 +162,7 @@ const T={
 uk:{n1:"Послуги",n2:"Як це працює",n3:"Приклади",n4:"Про мене",n5:"Контакти",order:"Замовити",seePrice:"Подивитись ціни",
 h1:"Студійний звук для вашої пісні — з будь-якої точки світу",
 lead:"Запис вокалу, сведення, мастеринг і аранжування. Працюю дистанційно по Україні та всьому світу: ви надсилаєте матеріал, я повертаю готовий результат.",
-f1:"15 років",f1d:"у звукорежисурі",f2:"Поп і реп",f2d:"основні жанри",f3:"Онлайн",f3d:"Київ — Україна — світ",
+f1:"15 років",f1d:"у звукорежисурі",f2:"Поп і реп",f2d:"основні жанри",f3:"Онлайн",f3d:"Дистанційно",
 sH:"Послуги та ціни",sSub:"Прозорі ціни в гривнях. Якщо потрібного немає в списку, напишіть, і ми все обговоримо.",
 sNote:"Ціни зі словом «від» залежать від складності. Остаточну вартість я називаю після оцінки вашого матеріалу.",
 pH:"Як це працює",pSub:"Усе відбувається онлайн, без поїздок і зайвих кроків.",
@@ -173,11 +173,11 @@ p4:"Отримуєте результат",p4d:"Готові файли надс
 wH:"Приклади робіт",wSub:"Тут з’являться приклади «до і після»: сирий вокал і готове сведення.",soon:"Скоро",
 aH:"Про мене",a1:"Мене звати Віталій. Понад 15 років працюю у звукорежисурі та спеціалізуюсь на поп- і реп-матеріалі. Веду пісню від запису вокалу до фінального мастерингу, допомагаю з аранжуваннями й текстами.",
 a2:"Пісні, створені в Suno, доводжу до студійного звучання. Працюю швидко та якісно.",
-cH:"Напишіть мені",cSub:"Найшвидше відповідаю в Telegram. Опишіть пісню та що потрібно зробити.",foot:"Київ, Україна. Працюю по всьому світу"},
+cH:"Напишіть мені",cSub:"Найшвидше відповідаю в Telegram. Опишіть пісню та що потрібно зробити.",foot:"Працюю дистанційно з музичними проєктами"},
 en:{n1:"Services",n2:"How it works",n3:"Samples",n4:"About",n5:"Contact",order:"Order now",seePrice:"See pricing",
 h1:"Studio-grade sound for your song — from anywhere in the world",
-lead:"Vocal recording, mixing, mastering and arranging. I work remotely across Ukraine and worldwide: you send the material, I return a finished result.",
-f1:"15 years",f1d:"in audio engineering",f2:"Pop and rap",f2d:"main genres",f3:"Online",f3d:"Kyiv — Ukraine — worldwide",
+lead:"Vocal recording, mixing, mastering and arranging. Remote collaboration from demo to finished release: you send the material, I return the result.",
+f1:"15 years",f1d:"in audio engineering",f2:"Pop and rap",f2d:"main genres",f3:"Online",f3d:"Remote collaboration",
 sH:"Services and pricing",sSub:"Clear prices in US dollars (converted from UAH at 45 UAH per $1). If you don’t see what you need, message me and we’ll sort it out.",
 sNote:"Prices marked “from” depend on complexity. I give the final quote after reviewing your material.",
 pH:"How it works",pSub:"Everything happens online, with no travel and no extra steps.",
@@ -188,7 +188,7 @@ p4:"You get the result",p4d:"I send the finished files online.",
 wH:"Samples",wSub:"Before-and-after examples will appear here: raw vocal and the finished mix.",soon:"Soon",
 aH:"About me",a1:"I’m Vitaliy. I’ve worked in audio engineering for over 15 years, specializing in pop and rap. I take a song from vocal recording to final mastering and help with arrangements.",
 a2:"I also bring songs created in Suno up to studio quality. Fast turnaround, high quality.",
-cH:"Get in touch",cSub:"Telegram is the fastest way to reach me. Tell me about your song and what you need.",foot:"Kyiv, Ukraine. Working worldwide"}};
+cH:"Get in touch",cSub:"Telegram is the fastest way to reach me. Tell me about your song and what you need.",foot:"Remote collaboration on music projects"}};
 const S=[
 ["Запис вокалу","Vocal recording","Студійний запис голосу з налаштуванням звуку під артиста.","Studio vocal recording with the sound tailored to the artist.","1 000 ₴ / год","$22 / hour"],
 ["Сведення мультитреку з вокалом","Multitrack mixing with vocals","Баланс усіх доріжок пісні, обробка, простір і глибина.","Balance across every track, processing, space and depth.","4 500 ₴","$100"],
@@ -204,7 +204,7 @@ const $=s=>document.querySelector(s);
 function bars(){const w=$("#wave"),n=Math.min(90,Math.floor(innerWidth/13));w.innerHTML="";for(let i=0;i<n;i++){const h=.18+.82*Math.abs(Math.sin(i*.37)*Math.cos(i*.11+1)+Math.sin(i*.9)*.25);w.insertAdjacentHTML("beforeend",`<i style="--i:${i};--h:${Math.min(1,h).toFixed(2)};--m:${Math.round(i/n*100)}%"></i>`)}}
 function setLang(l){const t=T[l],k=l==="en"?1:0;
 document.documentElement.lang=l==="en"?"en":"uk";
-document.title=l==="en"?"R Music Records — recording studio in Kyiv, working worldwide":"R Music Records — студія звукозапису, Київ";
+document.title=l==="en"?"R Music Records — online recording and music production":"R Music Records — студія звукозапису онлайн";
 document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t[e.dataset.t]);
 $("#list").innerHTML=S.filter(s=>!(k&&s[6])).map(s=>`<div class="row"><h3>${s[k]}</h3><div class="price">${s[4+k]}</div><p>${s[2+k]}</p></div>`).join("");
 $("#tracks").innerHTML=W.map(w=>`<div class="track"><span class="play"></span><div><b>${w[k]}</b><div class="mini">${Array.from({length:40},(_,i)=>`<i style="--h:${6+Math.round(Math.abs(Math.sin(i*.5+w[0].length))*20)}px"></i>`).join("")}</div></div><em>${t.soon}</em></div>`).join("");
