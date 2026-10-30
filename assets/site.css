@@ -318,3 +318,27 @@ body.contact-choice-open{overflow:hidden}
 .hero-service-link strong{font-size:clamp(13px,1.15vw,16px);line-height:1.25;color:inherit}
 .hero-service-link em{font-size:11px;font-style:normal;opacity:.72;line-height:1.35}
 @media(max-width:640px){.hero-service-links{grid-template-columns:1fr;gap:8px;margin-top:18px}.hero-service-link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 10px;padding:12px 13px}.hero-service-link span{grid-column:1/-1}.hero-service-link strong{font-size:14px}.hero-service-link em{grid-column:2;grid-row:2;text-align:right}}
+
+/* Shared visual system for every content page (including legacy service/article markup). */
+body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+main{width:100%;overflow:hidden}
+main>section{position:relative}
+main>section:not(.service-hero){padding-block:clamp(48px,6vw,88px)}
+main>section>.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
+.service-hero,.article-hero{background:radial-gradient(ellipse at 78% 12%,rgba(240,90,67,.13),transparent 42%),var(--bg);padding:clamp(48px,7vw,90px) 0}
+.service-hero h1,.article-hero h1{font-size:clamp(38px,6vw,68px);line-height:1.06;letter-spacing:-.045em;max-width:900px;margin:12px 0 20px}
+.service-hero p,.article-hero p{color:var(--muted)}
+.service-hero .hero-lead,.article-hero .hero-lead{font-size:clamp(18px,2vw,22px);max-width:760px;color:#eee7e1}
+main h2{font-size:clamp(27px,3.4vw,42px);line-height:1.15;letter-spacing:-.035em}
+main h3{line-height:1.25}
+main article,.related-card,.service-info-card,.price-panel,.faq-list details{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012))}
+main article,.related-card,.service-info-card{padding:clamp(20px,2.5vw,30px)}
+main a:not(.btn):hover{color:var(--amber)}
+main ul{padding-left:22px;color:var(--muted)}
+main li{padding:5px 0}
+main .breadcrumb{font-size:13px;color:var(--muted);margin:0 0 24px}
+main .price-panel{padding:clamp(24px,3vw,36px)}
+main .faq-list details{padding:18px 22px;margin:10px 0}
+main .faq-list summary{font-weight:800;cursor:pointer}
+main .faq-list details p{color:var(--muted)}
+@media(max-width:760px){main>section:not(.service-hero){padding-block:48px}.service-hero,.article-hero{padding:48px 0 38px}main .service-hero-grid,main .service-detail-grid{grid-template-columns:1fr}}
