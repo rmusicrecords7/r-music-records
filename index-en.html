@@ -32,6 +32,15 @@
 <link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/index.html">
 <link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/index.html">
 <link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/index-en.html">
+<style>
+.hero-service-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0 12px;max-width:760px}
+.hero-service-link{display:flex;flex-direction:column;gap:7px;min-width:0;padding:13px 14px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.035);text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.hero-service-link:hover{border-color:var(--accent,#d6a75b);background:rgba(255,255,255,.075);transform:translateY(-2px)}
+.hero-service-link span{font-size:10px;letter-spacing:.12em;opacity:.68}
+.hero-service-link strong{font-size:clamp(13px,1.15vw,16px);line-height:1.25;color:inherit}
+.hero-service-link em{font-size:11px;font-style:normal;opacity:.72;line-height:1.35}
+@media(max-width:640px){.hero-service-links{grid-template-columns:1fr;gap:8px;margin-top:18px}.hero-service-link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 10px;padding:12px 13px}.hero-service-link span{grid-column:1/-1}.hero-service-link strong{font-size:14px}.hero-service-link em{grid-column:2;grid-row:2;text-align:right}}
+</style>
 </head>
 <body class="home-redesign">
 <header class="site-header"><div class="wrap header-inner">
@@ -60,6 +69,11 @@
 <div class="hero-actions">
 <a class="btn" href="https://wa.me/380937201536" target="_blank" rel="noopener" data-ua="Написати в WhatsApp ↗" data-en="Send me your demo — let's discuss your track.">Send me your demo — let's discuss your track.</a>
 <a class="btn btn-ghost" href="#pricing" data-ua="Переглянути ціни" data-en="View pricing">View pricing</a>
+</div>
+<div class="hero-service-links" aria-label="Explore services">
+<a class="hero-service-link" href="/mixing.html"><span data-ua="01 · ЗВЕДЕННЯ" data-en="01 · MIXING">01 · MIXING</span><strong data-ua="Зведення музики" data-en="Music mixing">Music mixing</strong><em data-ua="Баланс, вокал і простір ↗" data-en="Balance, vocals & depth ↗">Balance, vocals & depth ↗</em></a>
+<a class="hero-service-link" href="/mastering.html"><span data-ua="02 · МАСТЕРИНГ" data-en="02 · MASTERING">02 · MASTERING</span><strong data-ua="Мастеринг" data-en="Mastering">Mastering</strong><em data-ua="Фінальне звучання ↗" data-en="Final sound polish ↗">Final sound polish ↗</em></a>
+<a class="hero-service-link" href="/suno-production.html"><span data-ua="03 · SUNO AI" data-en="03 · SUNO AI">03 · SUNO AI</span><strong data-ua="Suno AI Production" data-en="Suno AI Production">Suno AI Production</strong><em data-ua="Доопрацювання AI-треків ↗" data-en="Develop your AI track ↗">Develop your AI track ↗</em></a>
 </div>
 <p class="hero-note" data-ua="Дистанційна співпраця · Від демо до фінального звучання" data-en="Remote collaboration · From demo to final sound">Remote collaboration · From demo to final sound</p>
 </div>
