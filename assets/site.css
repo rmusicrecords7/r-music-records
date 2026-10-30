@@ -309,3 +309,12 @@ body.contact-choice-open{overflow:hidden}
 .home-redesign .lang a:hover{background:#444!important;border-color:#aaa!important;color:#fff!important}
 .home-redesign .lang a[aria-current="page"]{background:#fff!important;border-color:#fff!important;color:#050505!important}
 @media(max-width:720px){.lang{gap:3px;padding:3px}.lang a{min-width:31px;min-height:29px;padding:5px 6px!important;font-size:11px!important}}
+
+/* Prominent service shortcuts in the homepage hero */
+.hero-service-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0 12px;max-width:760px}
+.hero-service-link{display:flex;flex-direction:column;gap:7px;min-width:0;padding:13px 14px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.035);text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.hero-service-link:hover{border-color:var(--accent,#d6a75b);background:rgba(255,255,255,.075);transform:translateY(-2px)}
+.hero-service-link span{font-size:10px;letter-spacing:.12em;opacity:.68}
+.hero-service-link strong{font-size:clamp(13px,1.15vw,16px);line-height:1.25;color:inherit}
+.hero-service-link em{font-size:11px;font-style:normal;opacity:.72;line-height:1.35}
+@media(max-width:640px){.hero-service-links{grid-template-columns:1fr;gap:8px;margin-top:18px}.hero-service-link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 10px;padding:12px 13px}.hero-service-link span{grid-column:1/-1}.hero-service-link strong{font-size:14px}.hero-service-link em{grid-column:2;grid-row:2;text-align:right}}
