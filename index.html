@@ -185,6 +185,27 @@
 </div>
 </div></section>
 
+
+<section class="section lead-section" id="order-request" data-lead-form>
+  <div class="wrap lead-panel">
+    <div class="lead-copy">
+      <div class="eyebrow" data-eyebrow></div>
+      <h2></h2>
+      <p data-intro></p>
+    </div>
+    <form class="lead-form">
+      <div class="lead-field"><label data-name-label for="lead-name"></label><input id="lead-name" name="name" autocomplete="name" required maxlength="80"></div>
+      <div class="lead-field"><label data-service-label for="lead-service"></label><select id="lead-service" name="service" required></select></div>
+      <div class="lead-field"><label data-quantity-label for="lead-quantity"></label><input id="lead-quantity" name="quantity" type="number" min="1" max="20" value="1" required></div>
+      <div class="lead-field"><label data-link-label for="lead-link"></label><input id="lead-link" name="link" type="url" placeholder="https://"></div>
+      <div class="lead-field full"><label data-details-label for="lead-details"></label><textarea id="lead-details" name="details" maxlength="1200"></textarea></div>
+      <div class="lead-estimate full"><span data-estimate-label></span><strong data-estimate>—</strong></div>
+      <button class="btn" type="submit"><span data-submit-label></span></button>
+      <p class="lead-note" data-note></p>
+    </form>
+  </div>
+</section>
+
 <section class="section section-alt" id="contact"><div class="wrap contact-panel"><div><div class="eyebrow" data-ua="ПОЧНЕМО З ТВОЄЇ ІДЕЇ" data-en="START WITH YOUR IDEA">ПОЧНЕМО З ТВОЄЇ ІДЕЇ</div><h2 data-ua="Розкажи, що хочеш почути у своєму треку" data-en="Tell me how you want your track to sound">Розкажи, що хочеш почути у своєму треку</h2><p data-ua="Надішли демо, референс або просто опиши задачу. Обговоримо можливості, вартість і наступні кроки." data-en="Send a demo, a reference, or simply describe the task. We’ll discuss options, cost, and next steps.">Надішли демо, референс або просто опиши задачу. Обговоримо можливості, вартість і наступні кроки.</p></div><div class="contact-actions"><a class="btn" href="https://t.me/r_music_records" target="_blank" rel="noopener" aria-label="Telegram R Music Records">Telegram ↗</a><a class="btn btn-ghost" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener" aria-label="Instagram R Music Records">Instagram ↗</a></div></div></section>
 </main>
 
@@ -280,6 +301,7 @@ setLanguage(initial);
 \n
 
 
+<script src="/assets/lead-form.js" defer></script>
 <script src="/assets/engagement.js" defer></script>
 </body>
 </html>
