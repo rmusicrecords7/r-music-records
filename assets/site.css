@@ -358,3 +358,5 @@ main .faq-list details p{color:var(--muted)}
 .lead-form button{grid-column:1/-1;justify-self:start;cursor:pointer}
 .lead-note{grid-column:1/-1;margin:0;font-size:12px}
 @media(max-width:760px){.lead-section .lead-panel{grid-template-columns:1fr;gap:22px}.lead-form{grid-template-columns:1fr}.lead-field.full,.lead-form button,.lead-note{grid-column:1}}
+
+.about-copy h1{font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-.04em;margin:10px 0 18px}.about-more{display:inline-block;margin:14px 0 0;color:var(--muted);font-size:14px;font-weight:700}
