@@ -35,7 +35,7 @@
   service.innerHTML = '<option value="">—</option>' + t.services.map(function(s){return '<option value="'+s[0]+'">'+s[1]+'</option>';}).join("");
   var selected = null;
   function format(value) {
-    return new Intl.NumberFormat(lang === "uk" || lang === "ru" ? "uk-UA" : lang === "de" ? "de-DE" : lang === "fr" ? "fr-FR" : "en-US", {maximumFractionDigits:0}).format(value) + " " + currency;
+    return new Intl.NumberFormat(lang === "uk" ? "uk-UA" : lang === "ru" ? "ru-RU" : lang === "de" ? "de-DE" : lang === "fr" ? "fr-FR" : "en-US", {maximumFractionDigits:0}).format(value) + " " + currency;
   }
   function update() {
     selected = t.services.find(function(s){return s[0]===service.value;});
