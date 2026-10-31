@@ -67,8 +67,8 @@
     var url = channel === "telegram" ? "https://t.me/r_music_records?text=" + encodeURIComponent(message) : "https://wa.me/380937201536?text=" + encodeURIComponent(message);
     if (window.gtag) window.gtag("event","form_submit",{form_name:"project_request",service:service.value,quantity:count,estimated_value:total,currency:isUA?"UAH":"USD"});
     if (window.gtag) window.gtag("event","messenger_handoff_click",{messenger:channel,service:service.value});
-    var opened = window.open(url,"_blank","noopener");
-    if (!opened) window.location.href = url;
+    var opened = window.open(url,"_blank");
+    if (opened) opened.opener = null; else window.location.href = url;
   });
   update();
 })();
