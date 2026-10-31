@@ -57,7 +57,7 @@
         observer.unobserve(entry.target);
       });
     }, { threshold: 0.35 });
-    ["services", "pricing", "process", "faq", "studio-setup"].forEach(function (id) {
+    ["services", "pricing", "process", "faq", "studio-setup", "about", "order-request"].forEach(function (id) {
       var section = document.getElementById(id);
       if (section) observer.observe(section);
     });
