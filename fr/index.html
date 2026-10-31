@@ -192,6 +192,27 @@
 </div>
 </div></section>
 
+
+<section class="section lead-section" id="order-request" data-lead-form>
+  <div class="wrap lead-panel">
+    <div class="lead-copy">
+      <div class="eyebrow" data-eyebrow></div>
+      <h2></h2>
+      <p data-intro></p>
+    </div>
+    <form class="lead-form">
+      <div class="lead-field"><label data-name-label for="lead-name"></label><input id="lead-name" name="name" autocomplete="name" required maxlength="80"></div>
+      <div class="lead-field"><label data-service-label for="lead-service"></label><select id="lead-service" name="service" required></select></div>
+      <div class="lead-field"><label data-quantity-label for="lead-quantity"></label><input id="lead-quantity" name="quantity" type="number" min="1" max="20" value="1" required></div>
+      <div class="lead-field"><label data-link-label for="lead-link"></label><input id="lead-link" name="link" type="url" placeholder="https://"></div>
+      <div class="lead-field full"><label data-details-label for="lead-details"></label><textarea id="lead-details" name="details" maxlength="1200"></textarea></div>
+      <div class="lead-estimate full"><span data-estimate-label></span><strong data-estimate>—</strong></div>
+      <button class="btn" type="submit"><span data-submit-label></span></button>
+      <p class="lead-note" data-note></p>
+    </form>
+  </div>
+</section>
+
 <section class="section section-alt" id="contact"><div class="wrap contact-panel"><div><div class="eyebrow">COMMENÇONS PAR VOTRE IDÉE</div><h2>Décrivez le son que vous souhaitez pour votre morceau</h2><p>Envoyez une démo, une référence ou décrivez simplement votre projet. Nous discuterons des options, du coût et des prochaines étapes.</p></div><div class="contact-actions"><a class="btn" href="https://wa.me/380937201536" target="_blank" rel="noopener">WhatsApp ↗</a><a class="btn btn-ghost" href="https://www.instagram.com/r_music_records/" target="_blank" rel="noopener">Instagram ↗</a><a class="btn btn-ghost" href="mailto:r.music.records7@gmail.com">Email ↗</a></div></div></section>
 </main>
 
@@ -252,6 +273,7 @@
  });
 })();
 </script>
-\n<script src="/assets/engagement.js" defer></script>
+\n<script src="/assets/lead-form.js" defer></script>
+<script src="/assets/engagement.js" defer></script>
 </body>
 </html>
