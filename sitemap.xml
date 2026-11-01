@@ -337,7 +337,7 @@
   <url><loc>https://rmusicrecords.com/de/suno-ai-music-producer-arrangement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/de/suno-ai-song-improvement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/de/suno-ai-streaming-spam.html</loc><lastmod>2026-11-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-ai-streaming-spam-ua.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-ai-streaming-spam.html" />
@@ -664,7 +664,7 @@
   <url><loc>https://rmusicrecords.com/fr/suno-ai-music-producer-arrangement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/fr/suno-ai-song-improvement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/fr/suno-ai-streaming-spam.html</loc><lastmod>2026-11-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-ai-streaming-spam-ua.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-ai-streaming-spam.html" />
@@ -1174,7 +1174,7 @@
   <url><loc>https://rmusicrecords.com/ru/suno-ai-music-producer-arrangement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/ru/suno-ai-song-improvement.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://rmusicrecords.com/ru/suno-ai-streaming-spam.html</loc><lastmod>2026-11-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-ai-streaming-spam-ua.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-ai-streaming-spam.html" />
@@ -1297,7 +1297,7 @@
     <lastmod>2026-10-31</lastmod>
   </url>
   <url><loc>https://rmusicrecords.com/suno-ai-streaming-spam.html</loc><lastmod>2026-11-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-ai-streaming-spam-ua.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-ai-streaming-spam.html" />
@@ -1312,7 +1312,14 @@
     <loc>https://rmusicrecords.com/suno-production.html</loc>
     <lastmod>2026-10-31</lastmod>
   </url>
-  <url><loc>https://rmusicrecords.com/suno-streaming-ai-spam-ua.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://rmusicrecords.com/suno-streaming-ai-spam-ua.html</loc><lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-ai-streaming-spam.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-ai-streaming-spam.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-ai-streaming-spam.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
+  </url>
   <url><loc>https://rmusicrecords.com/suno-track-rights-ua.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-track-rights-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-track-rights.html" />
