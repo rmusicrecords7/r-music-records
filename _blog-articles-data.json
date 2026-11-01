@@ -1,0 +1,542 @@
+[
+  [
+    1,
+    "suno-ai-streaming-spam",
+    [
+      "Можно ли выпускать треки из Suno на стриминги и не попасть под фильтры",
+      "Can You Release Suno Tracks on Streaming Without Getting Filtered?",
+      "Чи можна випускати треки із Suno на стримінгах і не потрапити під фільтри?",
+      "Kann man Suno-Tracks veröffentlichen, ohne von Streaming-Filtern erfasst zu werden?",
+      "Peut-on publier des morceaux Suno sans être filtré par les plateformes de streaming?"
+    ],
+    [
+      "Почему платформы борются со спамом, а не с AI-музыкой как таковой, и как подготовить осознанный релиз.",
+      "Why platforms target spam rather than AI music itself, and how to prepare a deliberate release.",
+      "Чому платформи борються зі спамом, а не з AI-музикою як такою, і як підготувати свідомий реліз.",
+      "Warum Plattformen Spam statt KI-Musik an sich bekämpfen und wie ein bewusster Release vorbereitet wird.",
+      "Pourquoi les plateformes ciblent le spam plutôt que la musique IA elle-même et comment préparer une sortie réfléchie."
+    ]
+  ],
+  [
+    2,
+    "ai-credits-voice-cloning",
+    [
+      "Маркировка AI в кредитах и запрет клонов голоса: что нужно знать артисту",
+      "AI Credits and Voice Cloning: What Artists Need to Know",
+      "Маркування AI у кредитах і заборона клонів голосу: що потрібно знати артистам",
+      "KI-Credits und Voice-Cloning: Was Artists wissen sollten",
+      "Crédits IA et clonage vocal : ce que les artistes doivent savoir"
+    ],
+    [
+      "Как указывать использование AI в кредитах и почему имитация чужого голоса без разрешения создаёт риски.",
+      "How to disclose AI use in credits and why unauthorized voice imitation creates risks.",
+      "Як позначати використання AI у кредитах і чому імітація чужого голосу без дозволу створює ризики.",
+      "Wie KI-Nutzung in Credits angegeben wird und warum unerlaubte Stimm-Imitation Risiken birgt.",
+      "Comment signaler l’usage de l’IA dans les crédits et pourquoi l’imitation vocale sans autorisation présente des risques."
+    ]
+  ],
+  [
+    3,
+    "suno-track-rights",
+    [
+      "Права на треки из Suno: что можно, а что нельзя",
+      "Suno Track Rights: What You Can and Cannot Do",
+      "Права на треки із Suno: що можна, а що ні",
+      "Rechte an Suno-Tracks: Was erlaubt ist und was nicht",
+      "Droits sur les morceaux Suno : ce qui est permis ou non"
+    ],
+    [
+      "Тарифы, коммерческое использование, скачивание файлов и разница между правами сервиса и авторским правом.",
+      "Plans, commercial use, downloading files and the difference between service rights and copyright.",
+      "Тарифи, комерційне використання, завантаження файлів і різниця між правами сервісу та авторським правом.",
+      "Tarife, kommerzielle Nutzung, Downloads und der Unterschied zwischen Nutzungsrechten und Urheberrecht.",
+      "Offres, usage commercial, téléchargements et différence entre droits d’utilisation et droit d’auteur."
+    ]
+  ],
+  [
+    4,
+    "suno-v6-vs-udio",
+    [
+      "Suno v6 или Udio: что выбрать для релиза",
+      "Suno v6 vs Udio: Which Tool Fits a Release?",
+      "Suno v6 чи Udio: що обрати для релізу",
+      "Suno v6 oder Udio: Welches Tool eignet sich für einen Release?",
+      "Suno v6 ou Udio : quel outil choisir pour une sortie ?"
+    ],
+    [
+      "Сравнение рабочего процесса, доступа к файлам, коммерческих условий и практических ограничений сервисов.",
+      "Compare workflows, file access, commercial terms and practical limitations of the services.",
+      "Порівняння робочого процесу, доступу до файлів, комерційних умов і практичних обмежень сервісів.",
+      "Vergleich von Workflow, Dateizugriff, kommerziellen Bedingungen und praktischen Grenzen.",
+      "Comparer le flux de travail, l’accès aux fichiers, les conditions commerciales et les limites pratiques."
+    ]
+  ],
+  [
+    5,
+    "suno-track-to-release",
+    [
+      "Как довести трек из Suno до релиза: пошаговый план",
+      "From Suno to Release: A Step-by-Step Production Plan",
+      "Як довести трек із Suno до релізу: покроковий план",
+      "Von Suno zum Release: Schritt für Schritt zur fertigen Produktion",
+      "De Suno à la sortie : étapes pour finaliser un morceau"
+    ],
+    [
+      "От выбора генерации до аранжировки, вокала, сведения, мастеринга и подготовки релиза.",
+      "From selecting a generation to arrangement, vocals, mixing, mastering and release preparation.",
+      "Від вибору генерації до аранжування, вокалу, зведення, мастерингу та підготовки релізу.",
+      "Von der Auswahl einer Generation über Arrangement, Vocals, Mixing und Mastering bis zum Release.",
+      "Du choix d’une génération à l’arrangement, aux voix, au mixage, au mastering et à la préparation de la sortie."
+    ]
+  ],
+  [
+    6,
+    "ai-audio-artifacts",
+    [
+      "Типичные AI-артефакты в звучании: как распознать и исправить",
+      "AI Audio Artifacts: How to Identify and Fix Them",
+      "Типові AI-артефакти у звучанні: як розпізнати та виправити",
+      "KI-Audioartefakte erkennen und korrigieren",
+      "Artefacts audio de l’IA : les repérer et les corriger"
+    ],
+    [
+      "Металлические верха, нестабильный тайминг, размытые согласные и проблемы стерео перед релизом.",
+      "Metallic highs, unstable timing, blurred consonants and stereo issues to check before release.",
+      "Металеві верхи, нестабільний таймінг, розмиті приголосні та проблеми стерео перед релізом.",
+      "Metallische Höhen, instabiles Timing, verwaschene Konsonanten und Stereo-Probleme vor dem Release.",
+      "Aigus métalliques, timing instable, consonnes floues et problèmes stéréo à vérifier avant la sortie."
+    ]
+  ],
+  [
+    7,
+    "ai-mastering-vs-engineer",
+    [
+      "AI-мастеринг против живого инженера: честное сравнение",
+      "AI Mastering vs a Human Engineer: An Honest Comparison",
+      "AI-мастеринг чи живий інженер: чесне порівняння",
+      "KI-Mastering oder menschlicher Engineer: ein ehrlicher Vergleich",
+      "Mastering par IA ou ingénieur humain : comparaison honnête"
+    ],
+    [
+      "Когда автоматический мастеринг полезен, где он ограничен и что добавляет работа с инженером.",
+      "When automated mastering is useful, where it falls short and what a human engineer adds.",
+      "Коли автоматичний мастеринг доречний, у чому його обмеження та що додає робота з інженером.",
+      "Wann automatisches Mastering sinnvoll ist, wo es an Grenzen stößt und was ein Engineer ergänzt.",
+      "Quand le mastering automatisé est utile, quelles sont ses limites et ce qu’apporte un ingénieur."
+    ]
+  ],
+  [
+    8,
+    "stem-separation-vocal-extraction",
+    [
+      "Разделение на стемы и извлечение вокала: возможности и ограничения",
+      "Stem Separation and Vocal Extraction: Uses and Limitations",
+      "Розділення на стеми та витягування вокалу: можливості й обмеження",
+      "Stem-Separation und Vocal-Extraction: Möglichkeiten und Grenzen",
+      "Séparation des stems et extraction de voix : usages et limites"
+    ],
+    [
+      "Как использовать извлечённый вокал и инструменты, учитывая остатки других партий, фазу и артефакты.",
+      "How to use separated vocals and instruments while managing bleed, phase issues and extraction artifacts.",
+      "Як використовувати розділені вокал та інструменти, враховуючи залишки інших партій, фазу й артефакти.",
+      "Wie extrahierte Vocals und Instrumente genutzt werden können – mit Blick auf Übersprechen, Phase und Artefakte.",
+      "Utiliser les voix et instruments séparés en tenant compte des fuites, de la phase et des artefacts."
+    ]
+  ],
+  [
+    9,
+    "live-vocal-instead-of-ai",
+    [
+      "Живой вокал вместо AI: когда важно настоящее исполнение",
+      "Live Vocals vs AI Vocals: When a Real Performance Matters",
+      "Живий вокал замість AI: коли важливе справжнє виконання",
+      "Echter Gesang statt KI-Vocals: Wann eine Performance zählt",
+      "Voix réelle ou IA : quand une vraie interprétation fait la différence"
+    ],
+    [
+      "Почему живое исполнение добавляет фразировку, индивидуальность и эмоции, которых может не хватать AI-вокалу.",
+      "Why a human performance can add phrasing, identity and emotional detail that generated vocals may lack.",
+      "Чому живе виконання додає фразування, індивідуальність та емоційні нюанси, яких може бракувати AI-вокалу.",
+      "Warum eine echte Performance Phrasierung, Identität und emotionale Details ergänzt.",
+      "Pourquoi une vraie interprétation apporte phrasé, identité et nuances émotionnelles."
+    ]
+  ],
+  [
+    10,
+    "make-track-human",
+    [
+      "Как сделать трек «человеческим» и отличить его от AI-контента",
+      "How to Make a Track Feel Human and Stand Out from AI Content",
+      "Як зробити трек «людяним» і відрізнити його від AI-контенту",
+      "Wie ein Track menschlich wirkt und sich von KI-Inhalten abhebt",
+      "Comment rendre un morceau plus humain et le distinguer du contenu IA"
+    ],
+    [
+      "Живые детали, собственный текст, нестандартные решения и характерный продакшен вместо шаблонной генерации.",
+      "Live details, original lyrics, unexpected musical decisions and distinctive production instead of generic generation.",
+      "Живі деталі, власний текст, нестандартні рішення й характерний продакшен замість шаблонної генерації.",
+      "Lebendige Details, eigene Texte, ungewöhnliche Entscheidungen und individuelle Produktion statt austauschbarer KI-Generierung.",
+      "Des détails joués, des paroles originales, des choix inattendus et une production personnelle plutôt qu’une génération générique."
+    ]
+  ],
+  [
+    11,
+    "streaming-loudness-lufs",
+    [
+      "Громкость и LUFS на стримингах: сколько действительно нужно",
+      "Streaming Loudness and LUFS: How Loud Should Your Track Be?",
+      "Гучність і LUFS на стримінгах: скільки насправді потрібно",
+      "Lautheit und LUFS beim Streaming: Wie laut sollte ein Track sein?",
+      "Niveau sonore et LUFS en streaming : quelle cible choisir ?"
+    ],
+    [
+      "Почему −14 LUFS — не обязательное требование, как работает нормализация и почему динамика важнее гонки за громкостью.",
+      "Why −14 LUFS is not a mandatory upload target, how normalization works and why dynamics matter more than loudness wars.",
+      "Чому −14 LUFS — не обов’язкова вимога, як працює нормалізація та чому динаміка важливіша за гонитву за гучністю.",
+      "Warum −14 LUFS keine Upload-Pflicht sind, wie Normalisierung funktioniert und warum Dynamik wichtiger ist als Lautheitsrekorde.",
+      "Pourquoi −14 LUFS n’est pas une obligation, comment fonctionne la normalisation et pourquoi la dynamique compte davantage que la course au volume."
+    ]
+  ],
+  [
+    12,
+    "clipping-true-peak",
+    [
+      "Клиппинг и True Peak: почему трек хрипит после загрузки",
+      "Clipping and True Peak: Why a Track Distorts After Upload",
+      "Кліпінг і True Peak: чому трек хрипить після завантаження",
+      "Clipping und True Peak: Warum ein Track nach dem Upload verzerrt",
+      "Clipping et True Peak : pourquoi le morceau sature après mise en ligne"
+    ],
+    [
+      "Разбираем межсэмпловые пики, кодирование в AAC и Ogg и запас по уровню на этапе мастеринга.",
+      "Understand inter-sample peaks, AAC and Ogg encoding, and practical headroom choices during mastering.",
+      "Розбираємо міжсемплові піки, кодування в AAC та Ogg і запас рівня під час мастерингу.",
+      "Ein Überblick über Intersample-Peaks, AAC- und Ogg-Codierung sowie sinnvolle Pegelreserven beim Mastering.",
+      "Comprendre les crêtes inter-échantillons, l’encodage AAC et Ogg et la marge de niveau à prévoir au mastering."
+    ]
+  ],
+  [
+    13,
+    "dolby-atmos-spatial-audio",
+    [
+      "Dolby Atmos и пространственный звук: нужен ли отдельный микс",
+      "Dolby Atmos and Spatial Audio: Do You Need a Separate Mix?",
+      "Dolby Atmos і просторовий звук: чи потрібен окремий мікс",
+      "Dolby Atmos und Spatial Audio: Ist ein eigener Mix sinnvoll?",
+      "Dolby Atmos et audio spatial : faut-il un mix dédié ?"
+    ],
+    [
+      "Когда пространственный микс оправдан, какие форматы и мониторинг нужны и почему сначала стоит закончить стерео.",
+      "When a spatial mix makes sense, which formats and monitoring it requires, and why stereo should come first.",
+      "Коли просторовий мікс має сенс, які формати й моніторинг потрібні та чому спочатку варто завершити стерео.",
+      "Wann ein Spatial-Mix sinnvoll ist, welche Formate und welches Monitoring nötig sind und warum Stereo zuerst fertig sein sollte.",
+      "Quand un mix spatial est pertinent, quels formats et quel monitoring sont nécessaires, et pourquoi le stéréo doit d’abord être finalisé."
+    ]
+  ],
+  [
+    14,
+    "expensive-vocal-chain",
+    [
+      "Как сделать вокал «дорогим»: цепочка обработки по шагам",
+      "How to Make Vocals Sound Expensive: A Step-by-Step Processing Chain",
+      "Як зробити вокал «дорогим»: ланцюжок обробки крок за кроком",
+      "Wie Vocals hochwertig klingen: eine Processing-Kette Schritt für Schritt",
+      "Comment obtenir une voix haut de gamme : chaîne de traitement étape par étape"
+    ],
+    [
+      "От чистой записи и редактуры до EQ, компрессии, де-эссинга, пространства и автоматизации.",
+      "From clean recording and editing to EQ, compression, de-essing, ambience and automation.",
+      "Від чистого запису й редагування до EQ, компресії, де-есингу, простору та автоматизації.",
+      "Von sauberer Aufnahme und Editing bis EQ, Kompression, De-Essing, Raum und Automation.",
+      "De la prise propre et de l’édition à l’EQ, la compression, le de-essing, l’espace et l’automation."
+    ]
+  ],
+  [
+    15,
+    "vocal-mix-ready-beat",
+    [
+      "Сведение вокала под готовый минус: частые проблемы и решения",
+      "Mixing Vocals into a Finished Beat: Common Problems and Solutions",
+      "Зведення вокалу під готовий мінус: типові проблеми та рішення",
+      "Vocals in einen fertigen Beat mischen: typische Probleme und Lösungen",
+      "Mixer une voix sur une instru finalisée : problèmes et solutions"
+    ],
+    [
+      "Как освободить место для голоса, работать с динамическим EQ и сайдчейном и правильно подготовить минус.",
+      "Make room for the vocal, use dynamic EQ and sidechain carefully, and prepare the instrumental correctly.",
+      "Як звільнити місце для голосу, працювати з динамічним EQ і сайдчейном та правильно підготувати мінус.",
+      "Platz für Vocals schaffen, dynamischen EQ und Sidechain gezielt einsetzen und das Instrumental richtig vorbereiten.",
+      "Créer de la place pour la voix, utiliser l’EQ dynamique et le sidechain avec mesure, et préparer correctement l’instrumental."
+    ]
+  ],
+  [
+    16,
+    "rap-vocal-mixing",
+    [
+      "Сведение рэпа: как сделать читку разборчивой и мощной",
+      "Rap Mixing: Making Vocals Clear, Present and Powerful",
+      "Зведення репу: як зробити читку чіткою та потужною",
+      "Rap-Mixing: Vocals klar, präsent und kraftvoll gestalten",
+      "Mixage rap : obtenir une voix claire, présente et puissante"
+    ],
+    [
+      "Разбираем дикцию, компрессию, даблы, адлибы, бас и 808, де-эссинг и автоматизацию.",
+      "A practical look at diction, compression, doubles, ad-libs, bass and 808, de-essing and automation.",
+      "Практичний розбір дикції, компресії, даблів, адлібів, басу й 808, де-есингу та автоматизації.",
+      "Ein praxisnaher Blick auf Artikulation, Kompression, Doubles, Ad-libs, Bass und 808, De-Essing und Automation.",
+      "Un guide pratique sur l’articulation, la compression, les doublages, les ad-libs, la basse et la 808, le de-essing et l’automation."
+    ]
+  ],
+  [
+    17,
+    "stereo-vs-stem-mastering",
+    [
+      "Мастеринг стереофайла или стем-мастеринг: что выбрать",
+      "Stereo Mastering vs Stem Mastering: Which Should You Choose?",
+      "Мастеринг стереофайлу чи стем-мастеринг: що обрати",
+      "Stereo-Mastering oder Stem-Mastering: Was ist die richtige Wahl?",
+      "Mastering stéréo ou mastering par stems : que choisir ?"
+    ],
+    [
+      "Чем отличается работа с готовым стереомиксом от обработки отдельных групп и когда проблема требует возврата к сведению.",
+      "Compare mastering a finished stereo mix with processing separate groups, and learn when a mix should be revised instead.",
+      "Чим відрізняється робота з готовим стереоміксом від обробки окремих груп і коли проблему потрібно вирішувати на етапі зведення.",
+      "Vergleich zwischen einem fertigen Stereomix und der Bearbeitung einzelner Gruppen – und wann ein neuer Mix nötig ist.",
+      "Comparer le mastering d’un mix stéréo à celui de groupes séparés et savoir quand il vaut mieux reprendre le mixage."
+    ]
+  ],
+  [
+    18,
+    "mix-session-preparation",
+    [
+      "Как подготовить сессию к сведению: чек-лист артиста",
+      "How to Prepare a Session for Mixing: An Artist’s Checklist",
+      "Як підготувати сесію до зведення: чекліст артиста",
+      "Eine Session fürs Mixing vorbereiten: Checkliste für Artists",
+      "Préparer une session pour le mixage : checklist de l’artiste"
+    ],
+    [
+      "Форматы WAV, единая длина файлов, названия дорожек, запас по уровню, темп, тональность и референсы.",
+      "Prepare WAV files, matching start times, clear track names, headroom, tempo, key and references.",
+      "Підготуйте WAV-файли, однаковий початок доріжок, зрозумілі назви, запас рівня, темп, тональність і референси.",
+      "WAV-Dateien, identische Startpunkte, klare Tracknamen, Headroom, Tempo, Tonart und Referenzen vorbereiten.",
+      "Préparez les WAV, des points de départ identiques, des noms de pistes clairs, de la marge, le tempo, la tonalité et les références."
+    ]
+  ],
+  [
+    19,
+    "reference-tracks",
+    [
+      "Референс-треки: как выбрать и объяснить желаемый звук",
+      "Reference Tracks: How to Choose Them and Explain Your Sound",
+      "Референс-треки: як обрати й пояснити бажане звучання",
+      "Referenztracks: auswählen und den gewünschten Sound erklären",
+      "Morceaux de référence : les choisir et décrire le son souhaité"
+    ],
+    [
+      "Как подобрать 2–3 референса и описать конкретные элементы: вокал, низ, пространство, динамику и баланс.",
+      "Choose two or three useful references and describe specific elements: vocals, low end, space, dynamics and balance.",
+      "Як підібрати 2–3 референси та описати конкретні елементи: вокал, низ, простір, динаміку й баланс.",
+      "Zwei bis drei passende Referenzen auswählen und konkrete Aspekte wie Vocals, Bass, Raum, Dynamik und Balance beschreiben.",
+      "Choisir deux ou trois références pertinentes et décrire des éléments précis : voix, graves, espace, dynamique et équilibre."
+    ]
+  ],
+  [
+    20,
+    "mix-translation",
+    [
+      "Проверка микса на разных системах: что и как слушать",
+      "Mix Translation: How to Check Your Track on Different Systems",
+      "Перевірка міксу на різних системах: що і як слухати",
+      "Mix-Translation: Einen Mix auf verschiedenen Systemen prüfen",
+      "Traduction du mix : vérifier un morceau sur différents systèmes"
+    ],
+    [
+      "Проверяем бас, вокал, моносовместимость, резкость и громкость на мониторах, наушниках и телефоне.",
+      "Check bass, vocal balance, mono compatibility, harshness and perceived loudness on monitors, headphones and a phone.",
+      "Перевіряємо бас, баланс вокалу, моносумісність, різкість і гучність на моніторах, навушниках і телефоні.",
+      "Bass, Vocal-Balance, Monokompatibilität, Schärfe und Lautheit auf Monitoren, Kopfhörern und Smartphone prüfen.",
+      "Vérifier les graves, l’équilibre vocal, la compatibilité mono, l’agressivité et le niveau sur enceintes, casque et téléphone."
+    ]
+  ],
+  [
+    21,
+    "mixing-mastering-cost",
+    [
+      "Сколько стоит сведение и мастеринг и из чего складывается цена",
+      "How Much Do Mixing and Mastering Cost? What Determines the Price?",
+      "Скільки коштує зведення й мастеринг і від чого залежить ціна",
+      "Was kosten Mixing und Mastering und woraus setzt sich der Preis zusammen?",
+      "Combien coûtent le mixage et le mastering, et comment le prix est-il fixé ?"
+    ],
+    [
+      "Разбираем количество дорожек, состояние исходников, сложность правок, сроки и состав услуги.",
+      "Understand how track count, source quality, revision scope, deadlines and deliverables affect the quote.",
+      "Розбираємо кількість доріжок, стан вихідників, складність правок, терміни та склад послуги.",
+      "Wie Trackanzahl, Ausgangsmaterial, Korrekturumfang, Fristen und Lieferumfang den Preis beeinflussen.",
+      "Comprendre l’influence du nombre de pistes, des fichiers sources, des retouches, des délais et des livrables sur le devis."
+    ]
+  ],
+  [
+    22,
+    "choose-audio-engineer",
+    [
+      "Как выбрать звукорежиссёра: критерии и красные флаги",
+      "How to Choose a Mixing Engineer: Criteria and Red Flags",
+      "Як обрати звукорежисера: критерії та тривожні сигнали",
+      "Einen Mixing Engineer auswählen: Kriterien und Warnsignale",
+      "Choisir un ingénieur du son : critères et signaux d’alerte"
+    ],
+    [
+      "Оценивайте портфолио, коммуникацию, прозрачную цену, сроки, условия правок и реальные примеры до/после.",
+      "Evaluate relevant portfolio work, communication, transparent pricing, deadlines, revision terms and genuine before-and-after examples.",
+      "Оцінюйте портфоліо, комунікацію, прозору ціну, терміни, умови правок і реальні приклади до/після.",
+      "Achten Sie auf Referenzen, Kommunikation, transparente Preise, Fristen, Korrekturbedingungen und echte Vorher-Nachher-Beispiele.",
+      "Évaluez le portfolio, la communication, la transparence du prix, les délais, les retouches et les exemples avant/après."
+    ]
+  ],
+  [
+    23,
+    "mixing-revisions-feedback",
+    [
+      "Правки при сведении и мастеринге: как давать обратную связь",
+      "Mixing and Mastering Revisions: How to Give Useful Feedback",
+      "Правки під час зведення й мастерингу: як давати зворотний зв’язок",
+      "Mixing- und Mastering-Revisionen: hilfreiches Feedback geben",
+      "Retouches de mixage et mastering : formuler un retour utile"
+    ],
+    [
+      "Как собрать замечания, сравнивать версии на одинаковой громкости и отличать корректировку микса от новой задачи.",
+      "Learn to consolidate notes, compare versions at matched loudness and distinguish a mix revision from new production work.",
+      "Як зібрати зауваження, порівнювати версії на однаковій гучності та відрізняти правку міксу від нового завдання.",
+      "Feedback bündeln, Versionen bei gleicher Lautheit vergleichen und Mix-Korrekturen von neuer Produktionsarbeit unterscheiden.",
+      "Regrouper les remarques, comparer les versions au même niveau et distinguer une retouche d’un nouveau travail de production."
+    ]
+  ],
+  [
+    24,
+    "remote-audio-engineer",
+    [
+      "Дистанционная работа со звукорежиссёром: процесс и защита материала",
+      "Working Remotely with a Mixing Engineer: Process and File Security",
+      "Дистанційна робота зі звукорежисером: процес і захист матеріалу",
+      "Remote mit einem Mixing Engineer arbeiten: Ablauf und Datenschutz",
+      "Travailler à distance avec un ingénieur du son : processus et protection des fichiers"
+    ],
+    [
+      "Этапы онлайн-сотрудничества, передача файлов, согласование цены и правок, конфиденциальность и хранение исходников.",
+      "The stages of remote collaboration, file transfer, pricing and revisions, confidentiality and safe handling of source files.",
+      "Етапи онлайн-співпраці, передавання файлів, узгодження ціни й правок, конфіденційність і зберігання вихідників.",
+      "Ablauf der Online-Zusammenarbeit, Dateiübertragung, Preis und Korrekturen, Vertraulichkeit und sichere Quelldateien.",
+      "Les étapes d’une collaboration à distance, le transfert des fichiers, le prix et les retouches, la confidentialité et la conservation des sources."
+    ]
+  ],
+  [
+    25,
+    "ep-album-cohesive-mix",
+    [
+      "Сведение EP и альбома: как добиться единого звучания",
+      "Mixing an EP or Album: How to Create a Cohesive Sound",
+      "Зведення EP та альбому: як досягти цілісного звучання",
+      "Eine EP oder ein Album mischen: einen einheitlichen Sound schaffen",
+      "Mixer un EP ou un album : créer une identité sonore cohérente"
+    ],
+    [
+      "Тональный баланс, громкость, характер вокала, стереоширина, порядок треков и мастеринг всего релиза в контексте.",
+      "Coordinate tonal balance, loudness, vocal character, stereo width, track order and mastering across the release.",
+      "Узгодьте тональний баланс, гучність, характер вокалу, стереоширину, порядок треків і мастеринг релізу в контексті.",
+      "Tonale Balance, Lautheit, Vocal-Charakter, Stereobreite, Trackreihenfolge und Mastering des gesamten Releases abstimmen.",
+      "Harmoniser l’équilibre tonal, le niveau, le caractère vocal, la largeur stéréo, l’ordre des titres et le mastering de l’ensemble."
+    ]
+  ],
+  [
+    26,
+    "reels-shorts-tiktok-audio",
+    [
+      "Как звучит трек в Reels, Shorts и TikTok: мастеринг для коротких видео",
+      "Audio for Reels, Shorts and TikTok: Mastering for Short-Form Video",
+      "Як звучить трек у Reels, Shorts і TikTok: мастеринг для коротких відео",
+      "Sound für Reels, Shorts und TikTok: Mastering für Kurzvideos",
+      "Son pour Reels, Shorts et TikTok : mastering pour les vidéos courtes"
+    ],
+    [
+      "Как подготовить короткий фрагмент, чтобы хук, вокал и бас читались на телефоне без чрезмерного лимитирования.",
+      "Prepare a short excerpt so the hook, vocal and bass translate on phones without excessive limiting.",
+      "Як підготувати короткий фрагмент, щоб хук, вокал і бас добре звучали на телефоні без надмірного лімітування.",
+      "Einen kurzen Ausschnitt so vorbereiten, dass Hook, Vocals und Bass auf Smartphones funktionieren – ohne übermäßiges Limiting.",
+      "Préparer un extrait court pour que le hook, la voix et les graves restent lisibles sur téléphone, sans limitation excessive."
+    ]
+  ],
+  [
+    27,
+    "demo-to-arrangement",
+    [
+      "От демо до полной аранжировки: что присылать и как проходит работа",
+      "From Demo to Full Arrangement: What to Send and How the Process Works",
+      "Від демо до повного аранжування: що надіслати та як відбувається робота",
+      "Vom Demo zum vollständigen Arrangement: Was Sie senden sollten und wie es abläuft",
+      "De la démo à l’arrangement complet : quoi envoyer et comment se déroule le travail"
+    ],
+    [
+      "Какие демо, референсы, тексты, темп и тональность помогают превратить идею в полноценную композицию.",
+      "Learn which demos, references, lyrics, tempo and key help turn a simple idea into a complete arrangement.",
+      "Які демо, референси, тексти, темп і тональність допомагають перетворити ідею на повноцінну композицію.",
+      "Welche Demos, Referenzen, Texte, Tempi und Tonarten helfen, aus einer Idee ein vollständiges Arrangement zu entwickeln.",
+      "Quels démos, références, paroles, tempo et tonalité permettent de transformer une idée en morceau complet."
+    ]
+  ],
+  [
+    28,
+    "live-vs-virtual-instruments",
+    [
+      "Живые или виртуальные инструменты: когда нужна настоящая игра",
+      "Live vs Virtual Instruments: When Does a Real Performance Matter?",
+      "Живі чи віртуальні інструменти: коли потрібне справжнє виконання",
+      "Live- oder virtuelle Instrumente: Wann ist echtes Spiel sinnvoll?",
+      "Instruments réels ou virtuels : quand une vraie interprétation fait-elle la différence ?"
+    ],
+    [
+      "Где живые гитары, бас, струнные и перкуссия добавляют характер, а где виртуальные инструменты практичнее.",
+      "Where live guitars, bass, strings and percussion add character, and where virtual instruments are more practical.",
+      "Де живі гітари, бас, струнні й перкусія додають характеру, а де віртуальні інструменти практичніші.",
+      "Wo echte Gitarren, Bass, Streicher und Percussion Charakter bringen und wo virtuelle Instrumente praktischer sind.",
+      "Quand les guitares, basses, cordes et percussions réelles apportent du caractère, et quand les instruments virtuels sont plus pratiques."
+    ]
+  ],
+  [
+    29,
+    "modern-song-structure-hook",
+    [
+      "Структура современной песни: как удержать слушателя в первые секунды",
+      "Modern Song Structure: How to Hold a Listener’s Attention from the Start",
+      "Структура сучасної пісні: як утримати слухача з перших секунд",
+      "Moderne Songstruktur: Aufmerksamkeit in den ersten Sekunden gewinnen",
+      "Structure d’une chanson moderne : capter l’attention dès les premières secondes"
+    ],
+    [
+      "Ранний хук, короткое вступление, динамика припева и структура, которая удерживает внимание без искусственного сокращения песни.",
+      "An early hook, a concise intro, chorus dynamics and a structure that holds attention without shortening a song unnecessarily.",
+      "Ранній хук, короткий вступ, динаміка приспіву та структура, що утримує увагу без штучного скорочення пісні.",
+      "Ein früher Hook, ein kurzes Intro, Chorus-Dynamik und eine Struktur, die Aufmerksamkeit hält, ohne den Song künstlich zu verkürzen.",
+      "Un hook précoce, une introduction concise, la dynamique du refrain et une structure qui retient l’attention sans raccourcir artificiellement le morceau."
+    ]
+  ],
+  [
+    30,
+    "lyrics-topline-songwriting",
+    [
+      "Текст песни и топлайн: как превратить идею в песню",
+      "Lyrics and Topline: How to Turn an Idea into a Song",
+      "Текст пісні та топлайн: як перетворити ідею на пісню",
+      "Songtext und Topline: Wie aus einer Idee ein Song wird",
+      "Paroles et topline : transformer une idée en chanson"
+    ],
+    [
+      "Как найти главную эмоцию и хук, выстроить структуру, написать естественный текст и согласовать авторские доли.",
+      "Develop the central emotion and hook, shape the structure, write natural lyrics and agree on songwriting splits.",
+      "Як знайти головну емоцію й хук, побудувати структуру, написати природний текст і погодити авторські частки.",
+      "Die zentrale Emotion und den Hook finden, die Struktur gestalten, natürliche Lyrics schreiben und Songwriting-Anteile vereinbaren.",
+      "Définir l’émotion et le hook, construire la structure, écrire des paroles naturelles et convenir des parts d’écriture."
+    ]
+  ]
+]
