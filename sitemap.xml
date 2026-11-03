@@ -1400,4 +1400,54 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-mix-ready-beat.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-mix-ready-beat.html" />
   </url>
+  <url>
+    <loc>https://rmusicrecords.com/vocal-recording-ua.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/vocal-recording-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/vocal-recording.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/vocal-recording-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/de/vocal-recording.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/vocal-recording-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/fr/vocal-recording.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/vocal-recording-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/ru/vocal-recording.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/vocal-recording-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
+  </url>
 </urlset>
