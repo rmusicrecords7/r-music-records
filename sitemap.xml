@@ -1450,4 +1450,54 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/vocal-recording.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/vocal-recording.html" />
   </url>
+  <url>
+    <loc>https://rmusicrecords.com/about.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/about-en.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/about-en.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/about-en.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/de/about.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/about-en.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/fr/about.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/about-en.html" />
+  </url>
+  <url>
+    <loc>https://rmusicrecords.com/ru/about.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/about.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/about-en.html" />
+  </url>
 </urlset>
