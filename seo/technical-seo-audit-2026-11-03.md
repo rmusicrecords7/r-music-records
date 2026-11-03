@@ -81,6 +81,11 @@ The following Ahrefs warnings still require a fresh crawl and/or the detailed is
 
 No speculative changes were made for these warnings.
 
+
+### Structured data spot-check
+
+The JSON-LD blocks on all 25 primary service landing pages parse as valid JSON. This does not guarantee Google rich-result eligibility or schema semantic validity. The two Ahrefs structured-data warnings remain open until their exact URLs and validator messages are available.
+
 ## Deployment and verification status
 
 The changes are committed to GitHub branch `main`. Public deployment was not independently confirmed during this audit because the public-site fetch returned cache/access errors. Re-run Ahrefs Site Audit after GitHub Pages has deployed the latest commit. Use Google Search Console URL Inspection for Google indexing status; Ahrefs crawl/indexability status is not a substitute.
