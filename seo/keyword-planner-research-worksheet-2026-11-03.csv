@@ -1,0 +1,29 @@
+country,language,landing_page,primary_keyword,keyword_variants,commercial_intent,avg_monthly_searches,competition,top_of_page_bid_low,top_of_page_bid_high,notes
+United States,English,/mixing.html,online music mixing service,"online mixing engineer; hire a mixing engineer; professional song mixing; mix my song; remote music mixing",hire engineer / quote,,,,,Separate market export; do not combine with UK or Canada
+United States,English,/mastering.html,online mastering service,"professional music mastering; song mastering online; hire a mastering engineer; mastering for streaming",buy service / quote,,,,,
+United States,English,/arrangement.html,online music arrangement service,"song arrangement service; hire a music arranger; arrange my song; music arrangement for artists",hire arranger / quote,,,,,
+United States,English,/suno-production.html,Suno AI song improvement,"improve a Suno song; professional Suno editing; Suno AI music production; fix AI-generated vocals",improve existing track / quote,,,,,
+United Kingdom,English,/mixing.html,online music mixing service,"online mixing engineer; hire a mixing engineer; professional song mixing; mix my song; remote music mixing",hire engineer / quote,,,,,Export separately from US and Canada
+United Kingdom,English,/mastering.html,online mastering service,"professional music mastering; song mastering online; hire a mastering engineer; mastering for streaming",buy service / quote,,,,,
+United Kingdom,English,/arrangement.html,online music arrangement service,"song arrangement service; hire a music arranger; arrange my song",hire arranger / quote,,,,,
+United Kingdom,English,/suno-production.html,Suno AI song improvement,"improve a Suno song; Suno AI music production; professional Suno editing",improve existing track / quote,,,,,
+Canada,English,/mixing.html,online music mixing service,"online mixing engineer; hire a mixing engineer; professional song mixing; mix my song",hire engineer / quote,,,,,Export separately from US and UK
+Canada,English,/mastering.html,online mastering service,"online mastering service; professional music mastering; song mastering online",buy service / quote,,,,,
+Canada,English,/arrangement.html,online music arrangement service,"music arrangement service; hire a music arranger; arrange my song",hire arranger / quote,,,,,
+Canada,English,/suno-production.html,Suno AI song improvement,"improve a Suno song; Suno AI music production; professional Suno editing",improve existing track / quote,,,,,
+Ukraine,Ukrainian,/mixing-ua.html,зведення музики,"замовити зведення; зведення пісні; зведення треку; зведення вокалу; зведення онлайн",замовити послугу,,,,,
+Ukraine,Ukrainian,/mastering-ua.html,мастеринг музики,"замовити мастеринг; мастеринг пісні; мастеринг треку; мастеринг онлайн",замовити послугу,,,,,
+Ukraine,Ukrainian,/arrangement-ua.html,аранжування музики,"замовити аранжування; створення аранжування пісні; аранжувальник; аранжування онлайн",замовити послугу,,,,,
+Ukraine,Ukrainian,/suno-production-ua.html,доопрацювання треків Suno AI,"покращити трек Suno; доопрацювати пісню Suno; переробка аранжування Suno",замовити доопрацювання,,,,,
+Ukraine,Russian,/ru/mixing.html,сведение музыки,"заказать сведение; сведение песни; сведение трека; сведение вокала; онлайн сведение",заказать услугу,,,,,Russian-language audience in Ukraine; do not target Russia by default
+Ukraine,Russian,/ru/mastering.html,мастеринг музыки,"заказать мастеринг; мастеринг песни; мастеринг трека; онлайн мастеринг",заказать услугу,,,,,
+Ukraine,Russian,/ru/arrangement.html,аранжировка музыки,"заказать аранжировку; аранжировка песни; создание аранжировки; аранжировщик онлайн",заказать услугу,,,,,
+Ukraine,Russian,/ru/suno-production.html,доработка треков Suno AI,"улучшить трек Suno; доработка песни Suno; обработка AI-вокала",заказать доработку,,,,,
+Germany,German,/de/mixing.html,Musik mischen lassen,"Online Mixing; Song mischen lassen; Vocal Mixing; Mixing Engineer; Musikmix online",Dienstleistung beauftragen,,,,,
+Germany,German,/de/mastering.html,Online Mastering,"Song mastern lassen; Musik-Mastering; Mastering Engineer; Mastering für Streaming",Dienstleistung beauftragen,,,,,
+Germany,German,/de/arrangement.html,Musik arrangieren lassen,"Song arrangieren lassen; Musikarrangement erstellen; Arrangement für einen Song",Dienstleistung beauftragen,,,,,
+Germany,German,/de/suno-production.html,Suno AI Song verbessern,"Suno Song professionell bearbeiten; KI-Song verbessern; Suno Vocals bearbeiten",Dienstleistung beauftragen,,,,,
+France,French,/fr/mixing.html,mixage audio en ligne,"faire mixer une chanson; mixage vocal; mixage multipiste; ingénieur mixage",commander un service,,,,,
+France,French,/fr/mastering.html,mastering audio en ligne,"mastering musique; mastering chanson; ingénieur mastering; mastering d'un titre",commander un service,,,,,
+France,French,/fr/arrangement.html,arrangement musical en ligne,"faire arranger une chanson; création d’arrangement; arrangeur musical",commander un service,,,,,
+France,French,/fr/suno-production.html,améliorer une chanson Suno AI,"améliorer un morceau Suno; production musicale Suno AI; retravailler une voix IA",commander une retouche,,,,,
