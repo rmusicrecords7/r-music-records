@@ -93,3 +93,17 @@ The changes are committed to GitHub branch `main`. Public deployment was not ind
 ## Next stage
 
 After a fresh crawl, resolve any remaining exact technical findings. Then proceed with title/description refinement, H1 and commercial-section improvements, and internal linking according to the keyword-to-page map.
+
+
+## Follow-up verification — 2026-11-03
+
+- Added a repository-level SEO validation workflow at `.github/workflows/seo-validation.yml`.
+- Latest validation run passed against 249 sitemap URLs and 251 HTML files. It confirmed valid sitemap XML, canonical self-references on sitemap pages, no sitemap-page noindex directives, title and description presence, and no broken local links or local assets.
+- Latest GitHub Pages deployment for the same code state completed successfully: run 41685478740.
+- Rebuilt the Russian arrangement and Suno AI commercial landing pages to use the shared service-page design system. Removed their old editorial stylesheet dependency and corrected card/CTA component classes.
+- Corrected Russian mixing, mastering and arrangement/Suno social-preview metadata so remote production services are not presented as in-person studio recording.
+- Refreshed sitemap modification dates for the updated Russian service URLs.
+- A public-site fetch of the revised deep URLs was not available through the current external fetch channel; deployment success is confirmed by GitHub Pages, but this audit does not claim a separate browser-level live-page check.
+- The 16 long-title and 4 meta-description length warnings from the earlier Ahrefs overview remain unassigned to exact URLs because the detailed Ahrefs issue export is not available in the connected data. The 25 primary commercial pages were checked separately: title lengths are 39–58 characters and descriptions 143–173 characters; all 25 contain one H1 and parseable JSON-LD. This does not establish that the 16 warnings elsewhere on the site have been resolved.
+- The two Ahrefs structured-data warnings remain open until exact URLs and validator messages are available. The 25 primary commercial-page JSON-LD blocks parse as valid JSON, which is not a substitute for semantic/schema validation.
+- The current Search Console sitemap record reports 239 submitted URLs, 0 errors and 0 warnings, last downloaded 2026-11-02. The repository sitemap now contains 249 URLs after the 2026-11-03 updates; Google has not yet been observed rereading that revision.
