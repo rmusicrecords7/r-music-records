@@ -66,6 +66,7 @@
     var message = lines.join("\n");
     var url = channel === "telegram" ? "https://t.me/r_music_records?text=" + encodeURIComponent(message) : "https://wa.me/380937201536?text=" + encodeURIComponent(message);
     if (window.gtag) window.gtag("event","form_submit",{form_name:"project_request",service:service.value,quantity:count,estimated_value:total,currency:isUA?"UAH":"USD"});
+    if (window.gtag) window.gtag("event","generate_lead",{currency:isUA?"UAH":"USD",value:total,service:service.value,form_name:"project_request",messenger:channel});
     if (window.gtag) window.gtag("event","messenger_handoff_click",{messenger:channel,service:service.value});
     var opened = window.open(url,"_blank");
     if (opened) opened.opener = null; else window.location.href = url;
