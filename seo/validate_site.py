@@ -19,6 +19,7 @@ class PageParser(HTMLParser):
         self.description = None
         self.noindex = False
         self.refs = []
+        self.alternates = []
         self._in_title = False
 
     def handle_starttag(self, tag, attrs):
@@ -33,6 +34,8 @@ class PageParser(HTMLParser):
                 self.noindex = True
         if tag == "link" and "canonical" in (attrs.get("rel") or "").lower().split():
             self.canonical = attrs.get("href")
+        if tag == "link" and "alternate" in (attrs.get("rel") or "").lower().split() and attrs.get("hreflang") and attrs.get("href"):
+            self.alternates.append((attrs["hreflang"].lower(), attrs["href"]))
         if tag in ("a", "link") and attrs.get("href"):
             self.refs.append(attrs["href"])
         if tag in ("img", "script", "source", "iframe") and attrs.get("src"):
@@ -102,8 +105,39 @@ def main():
         if parser.noindex:
             errors.append(f"Sitemap page is marked noindex: {page.relative_to(ROOT)}")
 
-    # Check internal links and local assets across every HTML document.
+    # Validate language alternates across all HTML documents.
     html_files = list(ROOT.rglob("*.html"))
+    page_data = {}
+    for page in html_files:
+        parser = PageParser()
+        try:
+            parser.feed(page.read_text(encoding="utf-8"))
+        except (UnicodeDecodeError, OSError) as exc:
+            errors.append(f"Cannot read HTML for hreflang check: {page.relative_to(ROOT)}: {exc}")
+            continue
+        page_data[page] = parser
+
+    canonical_to_page = {
+        parser.canonical: page
+        for page, parser in page_data.items()
+        if parser.canonical
+    }
+    for page, parser in page_data.items():
+        source = page.relative_to(ROOT)
+        seen_languages = set()
+        for language, target_url in parser.alternates:
+            if language in seen_languages:
+                errors.append(f"Duplicate hreflang={language}: {source}")
+            seen_languages.add(language)
+            target = canonical_to_page.get(target_url)
+            if target is None:
+                errors.append(f"Hreflang target is missing or has no matching canonical: {source} -> {language} {target_url}")
+                continue
+            target_parser = page_data[target]
+            if not any(href == parser.canonical for _, href in target_parser.alternates):
+                errors.append(f"Non-reciprocal hreflang: {source} -> {target.relative_to(ROOT)} ({language})")
+
+    # Check internal links and local assets across every HTML document.
     broken = set()
     for page in html_files:
         parser = PageParser()
