@@ -360,3 +360,110 @@ main .faq-list details p{color:var(--muted)}
 @media(max-width:760px){.lead-section .lead-panel{grid-template-columns:1fr;gap:22px}.lead-form{grid-template-columns:1fr}.lead-field.full,.lead-form button,.lead-note{grid-column:1}}
 
 .about-copy h1{font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-.04em;margin:10px 0 18px}.about-more{display:inline-block;margin:14px 0 0;color:var(--muted);font-size:14px;font-weight:700}
+
+
+/* R MUSIC RECORDS — PREMIUM MONOCHROME STUDIO REDESIGN */
+.home-redesign{
+  --bg:#050505;--panel:#0d0d0d;--panel2:#151515;--text:#f7f7f7;
+  --muted:#a8a8a8;--line:#292929;--amber:#fff;--red:#fff;
+  --max:1240px;
+  background:#050505;color:#f7f7f7;
+}
+.home-redesign body{background:#050505;color:#f7f7f7}
+.home-redesign .wrap{max-width:var(--max)}
+.home-redesign .site-header{
+  background:rgba(5,5,5,.94);backdrop-filter:blur(18px);
+  border-bottom:1px solid #252525
+}
+.home-redesign .header-inner{min-height:82px}
+.home-redesign .brand{gap:12px;color:#fff;letter-spacing:.08em}
+.home-redesign .brand-mark{width:38px;height:38px;background:#fff;color:#050505;border-radius:0;font-size:23px}
+.home-redesign .brand small{color:#888;letter-spacing:.17em;font-size:9px}
+.home-redesign nav{gap:clamp(12px,1.8vw,25px)}
+.home-redesign nav a{color:#bdbdbd;font-size:12px;letter-spacing:.035em;text-transform:uppercase}
+.home-redesign nav a:hover{color:#fff}
+.home-redesign .lang{background:#0b0b0b;border:1px solid #333;border-radius:0}
+.home-redesign .lang a{background:transparent!important;border:0!important;color:#aaa!important;border-radius:0!important}
+.home-redesign .lang a[aria-current=page]{background:#fff!important;color:#050505!important}
+.home-redesign .btn{background:#fff;color:#050505;border:1px solid #fff;border-radius:0;padding:15px 22px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;box-shadow:none}
+.home-redesign .btn:hover{background:#d8d8d8;border-color:#d8d8d8;transform:translateY(-2px)}
+.home-redesign .btn-ghost{background:transparent;color:#fff;border-color:#666}
+.home-redesign .btn-ghost:hover{background:#fff;color:#050505;border-color:#fff}
+.home-redesign .hero{padding:clamp(64px,9vw,120px) 0 clamp(60px,8vw,104px);background:#050505}
+.home-redesign .hero-grid{grid-template-columns:minmax(0,1.04fr) minmax(340px,.96fr);gap:clamp(36px,6vw,88px);align-items:center}
+.home-redesign .eyebrow{color:#aaa;font-size:10px;letter-spacing:.2em;font-weight:700}
+.home-redesign .eyebrow:before{background:#fff}
+.home-redesign .hero h1{max-width:780px;margin:22px 0 24px;font-size:clamp(46px,6.5vw,82px);line-height:.99;letter-spacing:-.075em;font-weight:800}
+.home-redesign .accent{color:#fff;-webkit-text-fill-color:#fff}
+.home-redesign .hero-lead{max-width:610px;color:#eee;font-size:18px;line-height:1.55}
+.home-redesign .hero-services{font-size:1em;color:#f5f5f5;font-weight:650}
+.home-redesign .hero-lead-detail,.home-redesign .hero-note{color:#999}
+.home-redesign .hero-actions{gap:12px;margin-top:30px}
+.home-redesign .hero-note{font-size:11px;letter-spacing:.04em;margin-top:20px}
+.home-redesign .hero-photo{position:relative;min-height:540px;aspect-ratio:4/5;border:0;border-radius:0;overflow:hidden;box-shadow:none;background:#151515}
+.home-redesign .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04) 35%,rgba(0,0,0,.68) 100%);pointer-events:none}
+.home-redesign .hero-photo img{width:100%;height:100%;min-height:540px;object-fit:cover;filter:grayscale(1) contrast(1.08);opacity:.9}
+.home-redesign .photo-caption{z-index:2;left:26px;right:26px;bottom:25px;color:#fff}
+.home-redesign .photo-caption strong{font-size:20px;letter-spacing:-.03em}
+.home-redesign .photo-caption span{color:#ccc;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+.home-redesign .hero-service-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;border-top:1px solid #333}
+.home-redesign .hero-service-link{padding:16px 14px 16px 0;border:0;border-bottom:1px solid #333;border-radius:0;background:transparent}
+.home-redesign .hero-service-link:nth-child(odd){margin-right:18px}
+.home-redesign .hero-service-link:hover{background:transparent;border-color:#777;transform:none}
+.home-redesign .hero-service-link span{color:#888;font-size:9px}
+.home-redesign .hero-service-link strong{font-size:14px;color:#fff}
+.home-redesign .hero-service-link em{color:#999;font-size:11px}
+.home-redesign .section{padding-block:clamp(76px,9vw,116px)}
+.home-redesign .section-alt{background:#0b0b0b;border-block:1px solid #222}
+.home-redesign .section-head{margin-bottom:44px}
+.home-redesign .section-head h2,.home-redesign .about-copy h2,.home-redesign .pricing-copy h2,.home-redesign .contact-panel h2{font-size:clamp(34px,4.6vw,58px);line-height:1.02;letter-spacing:-.065em;color:#fff}
+.home-redesign .section-head p,.home-redesign .about-copy p{max-width:650px;color:#aaa;line-height:1.8}
+.home-redesign .services-grid{gap:0;border-top:1px solid #333}
+.home-redesign .service-card{padding:30px 28px 34px 0;background:transparent;border:0;border-bottom:1px solid #333;border-radius:0;min-height:250px}
+.home-redesign .service-card:not(:nth-child(2n)){margin-right:24px}
+.home-redesign .service-card:hover{background:transparent;border-color:#888;transform:translateY(-3px)}
+.home-redesign .service-number{background:none;color:#888;font-size:11px;padding:0}
+.home-redesign .service-card h3{font-size:25px;letter-spacing:-.045em;color:#fff}
+.home-redesign .service-card p{max-width:440px;color:#999;line-height:1.75}
+.home-redesign .card-link,.home-redesign .blog-read{color:#fff;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.home-redesign .about-grid{gap:clamp(38px,7vw,100px);align-items:center}
+.home-redesign .about-photo{border-radius:0;background:#111}
+.home-redesign .about-photo img{filter:grayscale(1);min-height:500px}
+.home-redesign .about-tags span{border:1px solid #383838;border-radius:0;background:transparent;color:#bbb}
+.home-redesign .gallery-stage{border:0;border-radius:0}
+.home-redesign .gallery-slide{border-radius:0}
+.home-redesign .gallery-slide img{filter:grayscale(1) contrast(1.06)}
+.home-redesign .gallery-arrow{background:#fff;color:#050505;border-radius:0;border-color:#fff}
+.home-redesign .gallery-dot.is-active{background:#fff}
+.home-redesign .gallery-dot{background:#555}
+.home-redesign .outcome-card,.home-redesign .process-card,.home-redesign .blog-card{background:#0d0d0d;border:1px solid #303030;border-radius:0;box-shadow:none}
+.home-redesign .blog-card h3{color:#fff}
+.home-redesign .blog-card p,.home-redesign .outcome-card p{color:#999}
+.home-redesign .blog-card-tag{color:#aaa}
+.home-redesign .price-row .price{color:#fff}
+.home-redesign .contact-panel{background:#0c0c0c;border:1px solid #444;border-radius:0}
+.home-redesign footer{background:#050505;border-color:#292929}
+.home-redesign .faq-list details{border:1px solid #303030;border-radius:0;background:#0c0c0c}
+.home-redesign a:focus-visible,.home-redesign button:focus-visible{outline:2px solid #fff;outline-offset:4px}
+@media(max-width:900px){
+ .home-redesign .hero-grid{grid-template-columns:1fr  .85fr;gap:30px}
+ .home-redesign .hero-photo,.home-redesign .hero-photo img{min-height:430px}
+ .home-redesign nav{gap:10px}
+ .home-redesign nav a{font-size:10px}
+}
+@media(max-width:720px){
+ .home-redesign .header-inner{min-height:68px}
+ .home-redesign .hero{padding:48px 0 58px}
+ .home-redesign .hero-grid{grid-template-columns:1fr;gap:30px}
+ .home-redesign .hero h1{font-size:clamp(43px,12vw,66px)}
+ .home-redesign .hero-photo,.home-redesign .hero-photo img{min-height:0;aspect-ratio:4/3}
+ .home-redesign .hero-service-links{grid-template-columns:1fr}
+ .home-redesign .hero-service-link:nth-child(odd){margin-right:0}
+ .home-redesign .service-card:not(:nth-child(2n)){margin-right:0}
+ .home-redesign .service-card{min-height:0;padding:24px 0}
+ .home-redesign .about-photo img{min-height:330px}
+ .home-redesign .section{padding-block:62px}
+}
+@media(prefers-reduced-motion:reduce){
+ .home-redesign *{scroll-behavior:auto!important;transition:none!important}
+}
