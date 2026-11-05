@@ -3,6 +3,13 @@
   <url>
     <loc>https://rmusicrecords.com/</loc>
     <lastmod>2026-11-03</lastmod>
+  
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/index-en.html" />
   </url>
   <url><loc>https://rmusicrecords.com/ai-audio-artifacts-ua.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/ai-audio-artifacts-ua.html" />
