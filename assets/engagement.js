@@ -28,7 +28,7 @@
       });
       track(method + "_click", { link_url: href });
     }
-    if (link.classList.contains("btn") || /#contact(?:$|[?])/.test(href)) {
+    if (link.classList.contains("btn") || link.classList.contains("button") || link.classList.contains("cta") || /#contact(?:$|[?])/.test(href)) {
       track("cta_click", {
         cta_text: (link.innerText || link.getAttribute("aria-label") || "").trim().slice(0, 100),
         link_url: href
