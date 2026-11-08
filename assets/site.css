@@ -467,3 +467,6 @@ main .faq-list details p{color:var(--muted)}
 @media(prefers-reduced-motion:reduce){
  .home-redesign *{scroll-behavior:auto!important;transition:none!important}
 }
+
+/* Social video gallery: UA and RU homepages */
+.social-video-section{background:#17191b;border-block:1px solid #303438}.social-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.social-video-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--panel);min-width:0}.social-video-placeholder{aspect-ratio:9/16;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;padding:24px;text-align:center;background:linear-gradient(145deg,#202326,#111315);color:var(--text)}.social-video-placeholder strong{font-size:18px}.social-video-placeholder span{font-size:13px;color:var(--muted)}.social-video-sources{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.social-video-sources a{border:1px solid var(--line);border-radius:999px;padding:10px 15px;font-size:13px;font-weight:700}.social-video-sources a:hover{border-color:var(--amber);color:var(--amber)}@media(max-width:720px){.social-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}@media(max-width:460px){.social-video-grid{grid-template-columns:1fr}.social-video-placeholder{aspect-ratio:9/12}}
