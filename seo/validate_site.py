@@ -3,6 +3,8 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
+from datetime import datetime, timezone
+import json
 import sys
 import xml.etree.ElementTree as ET
 
@@ -43,6 +45,20 @@ SITEMAP_HREFLANG_REQUIRED_GROUPS = [
     ],
 ]
 
+CORE_SEO_REQUIRED_PATHS = {
+    "index.html",
+    "index-en.html",
+    "mixing-ua.html",
+    "mixing.html",
+    "ru/mixing.html",
+    "de/mixing.html",
+    "fr/mixing.html",
+    "mastering-ua.html",
+    "arrangement-ua.html",
+    "vocal-recording-ua.html",
+    "suno-production-ua.html",
+}
+
 class PageParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -52,7 +68,11 @@ class PageParser(HTMLParser):
         self.noindex = False
         self.refs = []
         self.alternates = []
+        self.og = {}
+        self.jsonld = []
         self._in_title = False
+        self._in_jsonld = False
+        self._jsonld_chunks = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -60,8 +80,11 @@ class PageParser(HTMLParser):
             self._in_title = True
         if tag == "meta":
             name = (attrs.get("name") or "").lower()
+            prop = (attrs.get("property") or "").lower()
             if name == "description":
                 self.description = attrs.get("content", "")
+            if prop.startswith("og:"):
+                self.og[prop] = (attrs.get("content") or "").strip()
             if name in ("robots", "googlebot") and "noindex" in (attrs.get("content") or "").lower():
                 self.noindex = True
         if tag == "link" and "canonical" in (attrs.get("rel") or "").lower().split():
@@ -72,14 +95,23 @@ class PageParser(HTMLParser):
             self.refs.append(attrs["href"])
         if tag in ("img", "script", "source", "iframe") and attrs.get("src"):
             self.refs.append(attrs["src"])
+        if tag == "script" and (attrs.get("type") or "").split(";")[0].strip().lower() == "application/ld+json":
+            self._in_jsonld = True
+            self._jsonld_chunks = []
 
     def handle_endtag(self, tag):
         if tag == "title":
             self._in_title = False
+        if tag == "script" and self._in_jsonld:
+            self.jsonld.append("".join(self._jsonld_chunks).strip())
+            self._in_jsonld = False
+            self._jsonld_chunks = []
 
     def handle_data(self, data):
         if self._in_title:
             self.title += data
+        if self._in_jsonld:
+            self._jsonld_chunks.append(data)
 
 def local_file(url_or_path):
     parsed = urlsplit(url_or_path)
@@ -108,8 +140,21 @@ def main():
     sitemap_alternates = {}
     for node in tree.findall(".//sm:url", ns):
         loc_node = node.find("sm:loc", ns)
-        if loc_node is not None and loc_node.text:
-            loc = loc_node.text.strip()
+        loc = loc_node.text.strip() if loc_node is not None and loc_node.text else "<unknown>"
+        lastmod_nodes = node.findall("sm:lastmod", ns)
+        if len(lastmod_nodes) != 1 or not lastmod_nodes[0].text or not lastmod_nodes[0].text.strip():
+            errors.append(f"Sitemap URL must have exactly one non-empty lastmod: {loc}")
+        else:
+            raw_lastmod = lastmod_nodes[0].text.strip()
+            try:
+                parsed_lastmod = datetime.fromisoformat(raw_lastmod.replace("Z", "+00:00"))
+            except ValueError:
+                errors.append(f"Invalid sitemap lastmod: {loc}: {raw_lastmod!r}")
+            else:
+                if parsed_lastmod.date() > datetime.now(timezone.utc).date():
+                    errors.append(f"Future sitemap lastmod: {loc}: {raw_lastmod}")
+
+        if loc != "<unknown>":
             sitemap_alternates[loc] = {
                 (link.attrib.get("hreflang", "").lower(), link.attrib.get("href", ""))
                 for link in node.findall("xhtml:link", ns)
@@ -146,6 +191,14 @@ def main():
             errors.append(f"Missing meta description: {page.relative_to(ROOT)}")
         if parser.canonical != url:
             errors.append(f"Canonical mismatch: {page.relative_to(ROOT)} -> {parser.canonical!r}; expected {url}")
+        if parser.og:
+            if parser.og.get("og:url") and parser.og.get("og:url") != parser.canonical:
+                errors.append(f"Open Graph URL mismatch: {page.relative_to(ROOT)} -> {parser.og.get('og:url')!r}; expected {parser.canonical!r}")
+            og_image = parser.og.get("og:image", "")
+            if og_image:
+                image_url = urlsplit(og_image)
+                if image_url.scheme != "https" or not image_url.netloc:
+                    errors.append(f"Open Graph image must be an absolute HTTPS URL: {page.relative_to(ROOT)} -> {og_image!r}")
         if parser.noindex:
             errors.append(f"Sitemap page is marked noindex: {page.relative_to(ROOT)}")
 
@@ -159,6 +212,19 @@ def main():
         except (UnicodeDecodeError, OSError) as exc:
             errors.append(f"Cannot read HTML for hreflang check: {page.relative_to(ROOT)}: {exc}")
             continue
+        source = page.relative_to(ROOT).as_posix()
+        if source in CORE_SEO_REQUIRED_PATHS:
+            required_og = {"og:title", "og:description", "og:url", "og:image", "og:type"}
+            missing_og = required_og - set(parser.og)
+            if missing_og:
+                errors.append(f"Core page missing required Open Graph metadata: {source} (missing {', '.join(sorted(missing_og))})")
+            if not parser.jsonld:
+                errors.append(f"Core page missing JSON-LD structured data: {source}")
+        for index, payload in enumerate(parser.jsonld, start=1):
+            try:
+                json.loads(payload)
+            except (json.JSONDecodeError, TypeError) as exc:
+                errors.append(f"Invalid JSON-LD in {source}, script {index}: {exc}")
         page_data[page] = parser
 
     canonical_to_page = {
@@ -224,7 +290,7 @@ def main():
         for error in errors:
             print(f" - {error}")
         return 1
-    print("PASS: sitemap, canonical/indexability directives, metadata, local links and assets.")
+    print("PASS: sitemap URLs/lastmod, canonical/indexability, metadata, Open Graph, JSON-LD, hreflang, local links and assets.")
     return 0
 
 if __name__ == "__main__":
