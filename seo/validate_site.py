@@ -11,6 +11,38 @@ DOMAIN = "https://rmusicrecords.com"
 SITEMAP = ROOT / "sitemap.xml"
 ROBOTS = ROOT / "robots.txt"
 
+SITEMAP_HREFLANG_REQUIRED_GROUPS = [
+    # Verified core service and homepage language clusters.
+    [
+        "https://rmusicrecords.com/arrangement-ua.html",
+        "https://rmusicrecords.com/arrangement.html",
+        "https://rmusicrecords.com/ru/arrangement.html",
+        "https://rmusicrecords.com/de/arrangement.html",
+        "https://rmusicrecords.com/fr/arrangement.html",
+    ],
+    [
+        "https://rmusicrecords.com/mixing-ua.html",
+        "https://rmusicrecords.com/mixing.html",
+        "https://rmusicrecords.com/ru/mixing.html",
+        "https://rmusicrecords.com/de/mixing.html",
+        "https://rmusicrecords.com/fr/mixing.html",
+    ],
+    [
+        "https://rmusicrecords.com/mastering-ua.html",
+        "https://rmusicrecords.com/mastering.html",
+        "https://rmusicrecords.com/ru/mastering.html",
+        "https://rmusicrecords.com/de/mastering.html",
+        "https://rmusicrecords.com/fr/mastering.html",
+    ],
+    [
+        "https://rmusicrecords.com/",
+        "https://rmusicrecords.com/index-en.html",
+        "https://rmusicrecords.com/ru/index.html",
+        "https://rmusicrecords.com/de/index.html",
+        "https://rmusicrecords.com/fr/index.html",
+    ],
+]
+
 class PageParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -69,10 +101,22 @@ def main():
         print(f"ERROR: sitemap.xml is not valid XML: {exc}")
         return 1
 
-    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9", "xhtml": "http://www.w3.org/1999/xhtml"}
     urls = [node.text.strip() for node in tree.findall(".//sm:loc", ns) if node.text]
     if not urls:
         errors.append("Sitemap contains no URL entries")
+    sitemap_alternates = {}
+    for node in tree.findall(".//sm:url", ns):
+        loc_node = node.find("sm:loc", ns)
+        if loc_node is not None and loc_node.text:
+            loc = loc_node.text.strip()
+            sitemap_alternates[loc] = {
+                (link.attrib.get("hreflang", "").lower(), link.attrib.get("href", ""))
+                for link in node.findall("xhtml:link", ns)
+                if link.attrib.get("hreflang") and link.attrib.get("href")
+            }
+
+
     if len(urls) != len(set(urls)):
         errors.append("Sitemap contains duplicate URLs")
 
@@ -136,6 +180,23 @@ def main():
             target_parser = page_data[target]
             if not any(href == parser.canonical for _, href in target_parser.alternates):
                 errors.append(f"Non-reciprocal hreflang: {source} -> {target.relative_to(ROOT)} ({language})")
+
+    # Verify sitemap hreflang for the checked core language clusters.
+    for group in SITEMAP_HREFLANG_REQUIRED_GROUPS:
+        for url in group:
+            page = canonical_to_page.get(url)
+            if page is None:
+                errors.append(f"Missing HTML/canonical for required sitemap hreflang URL: {url}")
+                continue
+            expected = set(page_data[page].alternates)
+            actual = sitemap_alternates.get(url, set())
+            if expected != actual:
+                missing = expected - actual
+                extra = actual - expected
+                errors.append(
+                    f"Sitemap hreflang mismatch: {url} "
+                    f"(missing {len(missing)}, extra {len(extra)})"
+                )
 
     # Check internal links and local assets across every HTML document.
     broken = set()
