@@ -56,7 +56,7 @@
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     if (!nameInput.value.trim() || !selected) { alert(t.required); return; }
-    var count = Math.max(1, Number(qty.value)||1);
+    var count = Math.max(1, Math.min(Number(qty.value)||1, Number(qty.max)||20));
     var total = selected[3] === "hourquote" ? null : selected[2] * count;
     var prefix = selected[3] === "from" || selected[3] === "fromtext" ? (lang==="uk"?"від ":lang==="ru"?"от ":lang==="de"?"ab ":lang==="fr"?"à partir de ":"from ") : "";
     var amount = selected[3] === "hourquote" ? t.priceOnRequest : prefix + format(total);
