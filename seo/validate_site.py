@@ -5,6 +5,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from datetime import datetime, timezone
 import json
+import re
 import sys
 import xml.etree.ElementTree as ET
 
