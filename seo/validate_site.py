@@ -10,6 +10,24 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = "https://rmusicrecords.com"
+GA4_SCRIPT_RE = re.compile(
+    r'<script\b[^>]*src=["\']https://www\.googletagmanager\.com/gtag/js\?id=G-BRN5N11G4Y["\'][^>]*>',
+    re.IGNORECASE,
+)
+GA4_CONFIG_RE = re.compile(
+    r"gtag\s*\(\s*['\"]config['\"]\s*,\s*['\"]G-BRN5N11G4Y['\"]\s*\)",
+    re.IGNORECASE,
+)
+ENGAGEMENT_SCRIPT_RE = re.compile(
+    r'<script\b[^>]*src=["\'][^"\']*assets/engagement\.js["\'][^>]*>',
+    re.IGNORECASE,
+)
+LEAD_FORM_SCRIPT_RE = re.compile(
+    r'<script\b[^>]*src=["\'][^"\']*assets/lead-form\.js["\'][^>]*>',
+    re.IGNORECASE,
+)
+ENGAGEMENT_JS = ROOT / "assets" / "engagement.js"
+LEAD_FORM_JS = ROOT / "assets" / "lead-form.js"
 SITEMAP = ROOT / "sitemap.xml"
 ROBOTS = ROOT / "robots.txt"
 
@@ -208,11 +226,20 @@ def main():
     for page in html_files:
         parser = PageParser()
         try:
-            parser.feed(page.read_text(encoding="utf-8"))
+            html_content = page.read_text(encoding="utf-8")
+            parser.feed(html_content)
         except (UnicodeDecodeError, OSError) as exc:
             errors.append(f"Cannot read HTML for hreflang check: {page.relative_to(ROOT)}: {exc}")
             continue
         source = page.relative_to(ROOT).as_posix()
+        if len(GA4_SCRIPT_RE.findall(html_content)) != 1:
+            errors.append("Expected exactly one GA4 loader for G-BRN5N11G4Y: " + source)
+        if len(GA4_CONFIG_RE.findall(html_content)) != 1:
+            errors.append("Expected exactly one GA4 config for G-BRN5N11G4Y: " + source)
+        if len(ENGAGEMENT_SCRIPT_RE.findall(html_content)) != 1:
+            errors.append("Expected exactly one GA4 engagement event script: " + source)
+        if "data-lead-form" in html_content and len(LEAD_FORM_SCRIPT_RE.findall(html_content)) != 1:
+            errors.append("Lead form is missing its single lead-form.js handler: " + source)
         if source in CORE_SEO_REQUIRED_PATHS:
             required_og = {"og:title", "og:description", "og:url", "og:image", "og:type"}
             missing_og = required_og - set(parser.og)
@@ -263,6 +290,28 @@ def main():
                     f"Sitemap hreflang mismatch: {url} "
                     f"(missing {len(missing)}, extra {len(extra)})"
                 )
+
+    # Verify GA4 event scripts and expected custom events are present.
+    if not ENGAGEMENT_JS.is_file():
+        errors.append("Missing GA4 engagement event script: assets/engagement.js")
+    else:
+        engagement_content = ENGAGEMENT_JS.read_text(encoding="utf-8")
+        for event_name in ("contact_click", "cta_click", "faq_open", "section_view", "scroll_75"):
+            if not re.search(r'track\(\s*["\']' + event_name + r'["\']', engagement_content):
+                errors.append("Missing GA4 engagement event " + event_name + ": assets/engagement.js")
+        if not re.search(r'track\(\s*method\s*\+\s*["\']_click["\']\s*,', engagement_content):
+            errors.append("Missing dynamic contact-method click tracking: assets/engagement.js")
+        for method in ("whatsapp", "telegram", "instagram", "email", "phone"):
+            if not re.search(r'method\s*=\s*["\']' + method + r'["\']', engagement_content):
+                errors.append("Missing contact-method tracking for " + method + ": assets/engagement.js")
+
+    if not LEAD_FORM_JS.is_file():
+        errors.append("Missing project request form event script: assets/lead-form.js")
+    else:
+        lead_form_content = LEAD_FORM_JS.read_text(encoding="utf-8")
+        for event_name in ("form_start", "form_submit", "generate_lead", "messenger_handoff_click"):
+            if not re.search(r'gtag\(\s*["\']event["\']\s*,\s*["\']' + event_name + r'["\']', lead_form_content):
+                errors.append("Missing GA4 lead-form event " + event_name + ": assets/lead-form.js")
 
     # Check internal links and local assets across every HTML document.
     broken = set()
