@@ -87,6 +87,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:520px){.steps{grid-template-columns:1fr}.row{grid-template-columns:1fr}.price{grid-row:auto;grid-column:1}.bar .btn{display:none}}
 @media(prefers-reduced-motion:reduce){.wave i{animation:none}html{scroll-behavior:auto}.btn,.links a{transition:none}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRN5N11G4Y"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BRN5N11G4Y');</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -214,5 +216,6 @@ document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dat
 let l="uk";try{l=localStorage.getItem("lang")||((navigator.language||"").startsWith("en")?"en":"uk")}catch(e){}
 setLang(l==="en"?"en":"uk");bars();addEventListener("resize",bars);
 </script>
+<script src="/assets/engagement.js" defer></script>
 </body>
 </html>
