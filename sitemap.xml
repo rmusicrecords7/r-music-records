@@ -387,7 +387,15 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
   </url>
-  <url><loc>https://rmusicrecords.com/de/suno-production.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url>
+<loc>https://rmusicrecords.com/de/suno-production.html</loc><lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-production-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-production.html" />
+  </url>
   <url><loc>https://rmusicrecords.com/de/suno-track-rights.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-track-rights-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-track-rights.html" />
@@ -738,7 +746,15 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
   </url>
-  <url><loc>https://rmusicrecords.com/fr/suno-production.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url>
+<loc>https://rmusicrecords.com/fr/suno-production.html</loc><lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-production-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-production.html" />
+  </url>
   <url><loc>https://rmusicrecords.com/fr/suno-track-rights.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-track-rights-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-track-rights.html" />
@@ -1302,7 +1318,15 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-ai-streaming-spam.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
   </url>
-  <url><loc>https://rmusicrecords.com/ru/suno-production.html</loc><lastmod>2026-11-03</lastmod></url>
+  <url>
+<loc>https://rmusicrecords.com/ru/suno-production.html</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-production-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-production.html" />
+  </url>
   <url><loc>https://rmusicrecords.com/ru/suno-track-rights.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-track-rights-ua.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-track-rights.html" />
@@ -1426,12 +1450,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-ai-streaming-spam.html" />
   </url>
   <url>
+
     <loc>https://rmusicrecords.com/suno-production-ua.html</loc>
     <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-production-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-production.html" />
   </url>
   <url>
+
     <loc>https://rmusicrecords.com/suno-production.html</loc>
     <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-production-ua.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rmusicrecords.com/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rmusicrecords.com/ru/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rmusicrecords.com/de/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://rmusicrecords.com/fr/suno-production.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rmusicrecords.com/suno-production.html" />
   </url>
   <url><loc>https://rmusicrecords.com/suno-streaming-ai-spam-ua.html</loc><lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="uk" href="https://rmusicrecords.com/suno-streaming-ai-spam-ua.html" />
