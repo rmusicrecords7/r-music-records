@@ -247,6 +247,8 @@ def main():
     # manually enumerated clusters. URLs without alternates are valid; any
     # alternate set must match the HTML exactly.
     for url, actual in sitemap_alternates.items():
+        if not actual:
+            continue  # Regional pages intentionally have no Sitemap alternate set.
         page = canonical_to_page.get(url)
         if page is None:
             if actual:
