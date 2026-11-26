@@ -32,129 +32,6 @@ LEAD_FORM_JS = ROOT / "assets" / "lead-form.js"
 SITEMAP = ROOT / "sitemap.xml"
 ROBOTS = ROOT / "robots.txt"
 
-SITEMAP_HREFLANG_REQUIRED_GROUPS = [
-    # Verified core service and homepage language clusters.
-    [
-        "https://rmusicrecords.com/arrangement-ua.html",
-        "https://rmusicrecords.com/arrangement.html",
-        "https://rmusicrecords.com/ru/arrangement.html",
-        "https://rmusicrecords.com/de/arrangement.html",
-        "https://rmusicrecords.com/fr/arrangement.html",
-    ],
-    [
-        "https://rmusicrecords.com/mixing-ua.html",
-        "https://rmusicrecords.com/mixing.html",
-        "https://rmusicrecords.com/ru/mixing.html",
-        "https://rmusicrecords.com/de/mixing.html",
-        "https://rmusicrecords.com/fr/mixing.html",
-    ],
-    [
-        "https://rmusicrecords.com/mastering-ua.html",
-        "https://rmusicrecords.com/mastering.html",
-        "https://rmusicrecords.com/ru/mastering.html",
-        "https://rmusicrecords.com/de/mastering.html",
-        "https://rmusicrecords.com/fr/mastering.html",
-    ],
-    [
-        "https://rmusicrecords.com/",
-        "https://rmusicrecords.com/index-en.html",
-        "https://rmusicrecords.com/ru/index.html",
-        "https://rmusicrecords.com/de/index.html",
-        "https://rmusicrecords.com/fr/index.html",
-    ],
-    [
-        "https://rmusicrecords.com/autotune-vocal-correction-ua.html",
-        "https://rmusicrecords.com/autotune-vocal-correction.html",
-        "https://rmusicrecords.com/ru/autotune-vocal-correction.html",
-        "https://rmusicrecords.com/de/autotune-vocal-correction.html",
-        "https://rmusicrecords.com/fr/autotune-vocal-correction.html",
-    ],
-    [
-        "https://rmusicrecords.com/chervonyi-mak-suno-ai-ua.html",
-        "https://rmusicrecords.com/chervonyi-mak-suno-ai.html",
-        "https://rmusicrecords.com/ru/chervonyi-mak-suno-ai.html",
-        "https://rmusicrecords.com/de/chervonyi-mak-suno-ai.html",
-        "https://rmusicrecords.com/fr/chervonyi-mak-suno-ai.html",
-    ],
-    [
-        "https://rmusicrecords.com/human-mixing-mastering-arrangement-ua.html",
-        "https://rmusicrecords.com/human-mixing-mastering-arrangement.html",
-        "https://rmusicrecords.com/ru/human-mixing-mastering-arrangement.html",
-        "https://rmusicrecords.com/de/human-mixing-mastering-arrangement.html",
-        "https://rmusicrecords.com/fr/human-mixing-mastering-arrangement.html",
-    ],
-    [
-        "https://rmusicrecords.com/mixing-vs-mastering-ua.html",
-        "https://rmusicrecords.com/mixing-vs-mastering.html",
-        "https://rmusicrecords.com/ru/mixing-vs-mastering.html",
-        "https://rmusicrecords.com/de/mixing-vs-mastering.html",
-        "https://rmusicrecords.com/fr/mixing-vs-mastering.html",
-    ],
-    [
-        "https://rmusicrecords.com/prepare-stems-for-online-mixing-ua.html",
-        "https://rmusicrecords.com/prepare-stems-for-online-mixing.html",
-        "https://rmusicrecords.com/ru/prepare-stems-for-online-mixing.html",
-        "https://rmusicrecords.com/de/prepare-stems-for-online-mixing.html",
-        "https://rmusicrecords.com/fr/prepare-stems-for-online-mixing.html",
-    ],
-    [
-        "https://rmusicrecords.com/spotify-ai-music-spam-ua.html",
-        "https://rmusicrecords.com/spotify-ai-music-spam.html",
-        "https://rmusicrecords.com/ru/spotify-ai-music-spam.html",
-        "https://rmusicrecords.com/de/spotify-ai-music-spam.html",
-        "https://rmusicrecords.com/fr/spotify-ai-music-spam.html",
-    ],
-    [
-        "https://rmusicrecords.com/spotify-loudness-true-peak-ua.html",
-        "https://rmusicrecords.com/spotify-loudness-true-peak.html",
-        "https://rmusicrecords.com/ru/spotify-loudness-true-peak.html",
-        "https://rmusicrecords.com/de/spotify-loudness-true-peak.html",
-        "https://rmusicrecords.com/fr/spotify-loudness-true-peak.html",
-    ],
-    [
-        "https://rmusicrecords.com/suno-ai-music-producer-arrangement-ua.html",
-        "https://rmusicrecords.com/suno-ai-music-producer-arrangement.html",
-        "https://rmusicrecords.com/ru/suno-ai-music-producer-arrangement.html",
-        "https://rmusicrecords.com/de/suno-ai-music-producer-arrangement.html",
-        "https://rmusicrecords.com/fr/suno-ai-music-producer-arrangement.html",
-    ],
-    [
-        "https://rmusicrecords.com/suno-ai-song-improvement-ua.html",
-        "https://rmusicrecords.com/suno-ai-song-improvement.html",
-        "https://rmusicrecords.com/ru/suno-ai-song-improvement.html",
-        "https://rmusicrecords.com/de/suno-ai-song-improvement.html",
-        "https://rmusicrecords.com/fr/suno-ai-song-improvement.html",
-    ],
-    [
-        "https://rmusicrecords.com/three-favorite-saturation-plugins-ua.html",
-        "https://rmusicrecords.com/three-favorite-saturation-plugins.html",
-        "https://rmusicrecords.com/ru/three-favorite-saturation-plugins.html",
-        "https://rmusicrecords.com/de/three-favorite-saturation-plugins.html",
-        "https://rmusicrecords.com/fr/three-favorite-saturation-plugins.html",
-    ],
-    [
-        "https://rmusicrecords.com/top-3-books-for-mixing-ua.html",
-        "https://rmusicrecords.com/top-3-books-for-mixing.html",
-        "https://rmusicrecords.com/ru/top-3-books-for-mixing.html",
-        "https://rmusicrecords.com/de/top-3-books-for-mixing.html",
-        "https://rmusicrecords.com/fr/top-3-books-for-mixing.html",
-    ],
-    [
-        "https://rmusicrecords.com/blog.html",
-        "https://rmusicrecords.com/blog-en.html",
-        "https://rmusicrecords.com/ru/blog.html",
-        "https://rmusicrecords.com/de/blog.html",
-        "https://rmusicrecords.com/fr/blog.html",
-    ],
-    [
-        "https://rmusicrecords.com/suno-production-ua.html",
-        "https://rmusicrecords.com/suno-production.html",
-        "https://rmusicrecords.com/ru/suno-production.html",
-        "https://rmusicrecords.com/de/suno-production.html",
-        "https://rmusicrecords.com/fr/suno-production.html",
-    ],
-]
-
 CORE_SEO_REQUIRED_PATHS = {
     "index.html",
     "index-en.html",
@@ -366,22 +243,23 @@ def main():
             if not any(href == parser.canonical for _, href in target_parser.alternates):
                 errors.append(f"Non-reciprocal hreflang: {source} -> {target.relative_to(ROOT)} ({language})")
 
-    # Verify sitemap hreflang for the checked core language clusters.
-    for group in SITEMAP_HREFLANG_REQUIRED_GROUPS:
-        for url in group:
-            page = canonical_to_page.get(url)
-            if page is None:
-                errors.append(f"Missing HTML/canonical for required sitemap hreflang URL: {url}")
-                continue
-            expected = set(page_data[page].alternates)
-            actual = sitemap_alternates.get(url, set())
-            if expected != actual:
-                missing = expected - actual
-                extra = actual - expected
-                errors.append(
-                    f"Sitemap hreflang mismatch: {url} "
-                    f"(missing {len(missing)}, extra {len(extra)})"
-                )
+    # Verify Sitemap hreflang consistency for every Sitemap URL, not only the
+    # manually enumerated clusters. URLs without alternates are valid; any
+    # alternate set must match the HTML exactly.
+    for url, actual in sitemap_alternates.items():
+        page = canonical_to_page.get(url)
+        if page is None:
+            if actual:
+                errors.append(f"Missing HTML/canonical for sitemap hreflang URL: {url}")
+            continue
+        expected = set(page_data[page].alternates)
+        if expected != actual:
+            missing = expected - actual
+            extra = actual - expected
+            errors.append(
+                f"Sitemap hreflang mismatch: {url} "
+                f"(missing {len(missing)}, extra {len(extra)})"
+            )
 
     # Verify GA4 event scripts and expected custom events are present.
     if not ENGAGEMENT_JS.is_file():
