@@ -243,25 +243,42 @@ def main():
             if not any(href == parser.canonical for _, href in target_parser.alternates):
                 errors.append(f"Non-reciprocal hreflang: {source} -> {target.relative_to(ROOT)} ({language})")
 
-    # Verify Sitemap hreflang consistency for every Sitemap URL, not only the
-    # manually enumerated clusters. URLs without alternates are valid; any
-    # alternate set must match the HTML exactly.
-    for url, actual in sitemap_alternates.items():
-        if not actual:
-            continue  # Regional pages intentionally have no Sitemap alternate set.
+    # Validate Sitemap hreflang across every listed URL.
+    # HTML hreflang is optional when the Sitemap provides the language cluster;
+    # in that case validate target existence, self-reference, and reciprocity.
+    for url in urls:
+        actual = sitemap_alternates.get(url, set())
         page = canonical_to_page.get(url)
         if page is None:
             if actual:
                 errors.append(f"Missing HTML/canonical for sitemap hreflang URL: {url}")
             continue
         expected = set(page_data[page].alternates)
-        if expected != actual:
-            missing = expected - actual
-            extra = actual - expected
-            errors.append(
-                f"Sitemap hreflang mismatch: {url} "
-                f"(missing {len(missing)}, extra {len(extra)})"
-            )
+        if expected:
+            if expected != actual:
+                missing = expected - actual
+                extra = actual - expected
+                errors.append(
+                    f"Sitemap hreflang mismatch: {url} "
+                    f"(missing {len(missing)}, extra {len(extra)})"
+                )
+            continue
+        if not actual:
+            continue  # Regional URLs without a language cluster are valid.
+        if not any(target_url == url for _, target_url in actual):
+            errors.append(f"Sitemap hreflang missing self-reference: {url}")
+        for language, target_url in actual:
+            target_page = canonical_to_page.get(target_url)
+            if target_page is None:
+                errors.append(
+                    f"Sitemap hreflang target missing HTML/canonical: {url} -> {language} {target_url}"
+                )
+                continue
+            reciprocal = sitemap_alternates.get(target_url, set())
+            if not any(href == url for _, href in reciprocal):
+                errors.append(
+                    f"Non-reciprocal Sitemap hreflang: {url} -> {language} {target_url}"
+                )
 
     # Verify GA4 event scripts and expected custom events are present.
     if not ENGAGEMENT_JS.is_file():
