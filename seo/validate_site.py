@@ -291,7 +291,7 @@ def main():
             reciprocal = sitemap_alternates.get(target_url, set())
             if not any(href == url for _, href in reciprocal):
                 errors.append(
-                    f"Non-reciprocal Sitemap hreflang: {url} -> {language} {target_url"
+                    f"Non-reciprocal Sitemap hreflang: {url} -> {language} {target_url}"
                 )
 
     # Verify GA4 event scripts and expected custom events are present.
