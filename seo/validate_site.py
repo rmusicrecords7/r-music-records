@@ -243,10 +243,22 @@ def main():
             if not any(href == parser.canonical for _, href in target_parser.alternates):
                 errors.append(f"Non-reciprocal hreflang: {source} -> {target.relative_to(ROOT)} ({language})")
 
-    # Validate Sitemap hreflang across every listed URL.
-    # HTML hreflang is optional when the Sitemap provides the language cluster;
-    # in that case validate target existence, self-reference, and reciprocity.
+    # Regional pages intentionally have language-specific content and are not
+    # members of the translated service/article clusters in Sitemap.
+    SITEMAP_HREFLANG_EXCLUDED_URLS = {
+        "https://rmusicrecords.com/online-music-production-europe.html",
+        "https://rmusicrecords.com/online-music-production-ukraine.html",
+        "https://rmusicrecords.com/online-music-production-us.html",
+        "https://rmusicrecords.com/online-music-production-worldwide.html",
+    }
+
+    # Validate Sitemap hreflang across every listed URL. HTML hreflang is
+    # compared when present. Sitemap-only language clusters are also valid:
+    # verify targets, self-reference, and reciprocity instead of requiring
+    # duplicate annotations in each HTML file.
     for url in urls:
+        if url in SITEMAP_HREFLANG_EXCLUDED_URLS:
+            continue
         actual = sitemap_alternates.get(url, set())
         page = canonical_to_page.get(url)
         if page is None:
@@ -255,7 +267,9 @@ def main():
             continue
         expected = set(page_data[page].alternates)
         if expected:
-            if expected != actual:
+            if not actual:
+                errors.append(f"Missing Sitemap hreflang for HTML alternate cluster: {url}")
+            elif expected != actual:
                 missing = expected - actual
                 extra = actual - expected
                 errors.append(
@@ -264,7 +278,7 @@ def main():
                 )
             continue
         if not actual:
-            continue  # Regional URLs without a language cluster are valid.
+            continue  # URLs without a language cluster are valid.
         if not any(target_url == url for _, target_url in actual):
             errors.append(f"Sitemap hreflang missing self-reference: {url}")
         for language, target_url in actual:
@@ -277,7 +291,7 @@ def main():
             reciprocal = sitemap_alternates.get(target_url, set())
             if not any(href == url for _, href in reciprocal):
                 errors.append(
-                    f"Non-reciprocal Sitemap hreflang: {url} -> {language} {target_url}"
+                    f"Non-reciprocal Sitemap hreflang: {url} -> {language} {target_url"
                 )
 
     # Verify GA4 event scripts and expected custom events are present.
